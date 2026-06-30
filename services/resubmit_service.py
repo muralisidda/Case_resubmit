@@ -180,7 +180,6 @@ class ResubmitService:
         """
         import os
         import subprocess
-        import xml.etree.ElementTree as ET
 
         logger.info(
             f"Resubmit requested: case={case_number}, guid={record_id}, "
@@ -203,24 +202,17 @@ class ResubmitService:
                 "of tibjms.jar (ask your TIBCO administrator)."
             ), queue, '', ''
 
-        # ── Build workflowMessageRequest XML (namespace-correct per XSD) ──
-        WMR_NS = 'http://www.ajbell.co.uk/schemas/xsd/businessModel/workflow/workflowMessage.xsd'
-        WA_NS  = 'http://www.ajbell.co.uk/schemas/xsd/businessModel/workflow/workflowAttributes.xsd'
-        ET.register_namespace('wmr', WMR_NS)
-        ET.register_namespace('wa',  WA_NS)
-
-        root  = ET.Element(f'{{{WMR_NS}}}workflowMessageRequest')
-        attrs = ET.SubElement(root, f'{{{WA_NS}}}workflowAttributes')
-        ET.SubElement(attrs, f'{{{WA_NS}}}procedureName').text = 'MASProce'
-        ET.SubElement(attrs, f'{{{WA_NS}}}stepName').text      = '001MAS01'
-        ET.SubElement(attrs, f'{{{WA_NS}}}startedBy').text     = 'tibcoadmin'
-
-        fields = ET.SubElement(root, f'{{{WMR_NS}}}Fields')
-        field  = ET.SubElement(fields, f'{{{WMR_NS}}}Field')
-        ET.SubElement(field, f'{{{WMR_NS}}}Name').text  = 'OLDCASENUM'
-        ET.SubElement(field, f'{{{WMR_NS}}}Value').text = case_number
-
-        envelope = '<?xml version="1.0" encoding="UTF-8"?>' + ET.tostring(root, encoding='unicode')
+        # ── Load payload template and substitute case number ──────────
+        template_path = os.path.join(
+            os.path.abspath(os.path.dirname(__file__)),
+            '..', 'Schemas', 'SampleEMS_Message.xml'
+        )
+        try:
+            with open(template_path, 'r', encoding='utf-8') as f:
+                envelope = f.read().replace('$casenum$', case_number)
+        except Exception as exc:
+            logger.error(f"Failed to load EMS payload template: {exc}")
+            return False, f"Could not load EMS payload template: {exc}", queue, '', ''
 
         # ── Compile Java helper if needed ──────────────────────────────
         try:

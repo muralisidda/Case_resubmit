@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns0:workflowMessageRequest xmlns:ns0="http://www.ajbell.co.uk/schemas/xsd/businessModel/workflow/workflowMessage.xsd">
+	<ns1:workflowAttributes xmlns:ns1="http://www.ajbell.co.uk/schemas/xsd/businessModel/workflow/workflowAttributes.xsd">
+		<ns1:procedureName>MASProce</ns1:procedureName>
+		<ns1:stepName>001MAS01</ns1:stepName>
+		<ns1:startedBy>tibcoadmin</ns1:startedBy>
+	</ns1:workflowAttributes>
+	<ns0:Event>EVT01</ns0:Event>
+	<ns0:Fields>
+		<ns0:Field>
+			<ns0:Name>OLDCASENUM</ns0:Name>
+			<ns0:Value>$casenum$</ns0:Value>
+		</ns0:Field>
+	</ns0:Fields>
+</ns0:workflowMessageRequest>
