@@ -1,0 +1,532 @@
+{% extends 'base.html' %}
+
+{% block extra_css %}
+<style>
+    /* ── Status badges ─────────────────────────────────────────── */
+    .status-failed   { background-color: #c60c30; color: #fff; }
+    .status-success  { background-color: #198754; color: #fff; }
+    .status-pending  { background-color: #fd7e14; color: #fff; }
+    .status-unknown  { background-color: #6c757d; color: #fff; }
+
+    /* ── Record card ────────────────────────────────────────────── */
+    .record-card {
+        border: none;
+        box-shadow: 0 2px 10px rgba(198, 12, 48, 0.10);
+        border-radius: 8px;
+        margin-bottom: 1.5rem;
+        overflow: hidden;
+    }
+
+    .record-card .card-header {
+        background-color: #c60c30;
+        color: white;
+        padding: 0.75rem 1.25rem;
+        font-size: 0.95rem;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .record-card .card-body {
+        background-color: #fff;
+        padding: 1.25rem;
+    }
+
+    /* ── Detail table ───────────────────────────────────────────── */
+    .detail-table th {
+        width: 220px;
+        color: #c60c30;
+        font-weight: 600;
+        background-color: #fdf8f9;
+        border-color: #f2d6db;
+        vertical-align: middle;
+    }
+
+    .detail-table td {
+        border-color: #f2d6db;
+        vertical-align: middle;
+        word-break: break-word;
+    }
+
+    /* ── Buttons ────────────────────────────────────────────────── */
+    .btn-view-msg {
+        background-color: #6c757d;
+        border-color: #6c757d;
+        color: #fff;
+        font-size: 0.82rem;
+        padding: 0.25rem 0.75rem;
+    }
+
+    .btn-view-msg:hover {
+        background-color: #5a6268;
+        border-color: #545b62;
+        color: #fff;
+    }
+
+    .btn-resubmit {
+        background-color: #c60c30;
+        border-color: #c60c30;
+        color: #fff;
+        font-weight: 500;
+        min-width: 140px;
+        transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .btn-resubmit:hover {
+        background-color: #a50a28;
+        border-color: #a50a28;
+        box-shadow: 0 4px 10px rgba(198, 12, 48, 0.3);
+        color: #fff;
+    }
+
+    /* ── Message body modal ─────────────────────────────────────── */
+    #msgBodyContent {
+        white-space: pre-wrap;
+        word-break: break-all;
+        font-size: 0.82rem;
+        max-height: 400px;
+        overflow-y: auto;
+        background-color: #f8f9fa;
+        padding: 1rem;
+        border-radius: 4px;
+        border: 1px solid #f2d6db;
+    }
+
+    /* ── DB warning banner ──────────────────────────────────────── */
+    .db-warning {
+        border-left: 4px solid #c60c30;
+        background-color: #fdf8f9;
+        color: #c60c30;
+    }
+
+    /* ── Reason textarea ────────────────────────────────────────── */
+    #resubmitReason:focus {
+        border-color: #c60c30;
+        box-shadow: 0 0 0 0.2rem rgba(198, 12, 48, 0.2);
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+
+<!-- ── Breadcrumb ──────────────────────────────────────────────────────── -->
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{{ url_for('main.search') }}">Search</a></li>
+        <li class="breadcrumb-item active">ENV3-Case Resubmit Process</li>
+    </ol>
+</nav>
+
+<!-- ── Page title ─────────────────────────────────────────────────────── -->
+<div class="d-flex align-items-center justify-content-between mb-3 flex-wrap gap-2">
+    <div>
+        <h3 class="mb-0 fw-bold" style="color:#c60c30;">
+            <i class="bi bi-arrow-repeat me-2"></i>ENV3-Case Resubmit Process
+        </h3>
+        <small class="text-muted">
+            {% if case_number %}Case Number: <strong>{{ case_number }}</strong>{% endif %}
+            {% if case_number and guid %} &nbsp;|&nbsp; {% endif %}
+            {% if guid %}GUID: <strong>{{ guid }}</strong>{% endif %}
+        </small>
+    </div>
+    <a href="{{ url_for('main.search') }}" class="btn btn-outline-secondary btn-sm rounded-pill">
+        <i class="bi bi-arrow-left me-1"></i>New Search
+    </a>
+</div>
+
+<!-- ── DB warning ─────────────────────────────────────────────────────── -->
+{% if db_error %}
+<div class="alert db-warning d-flex align-items-start py-2 mb-3">
+    <i class="bi bi-database-exclamation me-2 mt-1" style="font-size:1.1rem;"></i>
+    <span>{{ db_error }}</span>
+</div>
+{% endif %}
+
+<!-- ── No results ─────────────────────────────────────────────────────── -->
+{% if not records %}
+<div class="card" style="border-color:#f2d6db;">
+    <div class="card-body text-center py-5">
+        <i class="bi bi-search" style="font-size:2.5rem;color:#c60c30;opacity:0.4;"></i>
+        <p class="mt-3 mb-0 text-muted">No records found for the given search criteria.</p>
+        <a href="{{ url_for('main.search') }}" class="btn btn-sm btn-primary mt-3">Try another search</a>
+    </div>
+</div>
+
+{% else %}
+
+<!-- ── Records ─────────────────────────────────────────────────────────── -->
+{% for rec in records %}
+{% set status_lower = (rec.get('MessageStatus') or 'unknown') | lower %}
+{% set status_class =
+    'status-failed'  if status_lower == 'failed'  else
+    'status-success' if status_lower == 'success' else
+    'status-pending' if status_lower == 'pending' else
+    'status-unknown'
+%}
+
+<div class="card record-card">
+    <div class="card-header">
+        <span>
+            <i class="bi bi-card-list me-1"></i>
+            Record {{ loop.index }} &nbsp;|&nbsp; {{ rec.get('ProcedureName', 'N/A') }}
+        </span>
+        <span class="badge {{ status_class }} ms-2" style="font-size:0.85rem;">
+            {{ rec.get('MessageStatus', 'UNKNOWN') }}
+        </span>
+    </div>
+
+    <div class="card-body">
+        <table class="table table-bordered detail-table mb-3">
+            <tbody>
+                <tr>
+                    <th>TIBCO iProcess Procedure</th>
+                    <td>{{ rec.get('ProcedureName', '—') }}</td>
+                </tr>
+                <tr>
+                    <th>Message Identifier</th>
+                    <td>{{ rec.get('MessageIdentifier', '—') }}</td>
+                </tr>
+                <tr>
+                    <th>Adviser Identifier</th>
+                    <td>{{ rec.get('AdviserIdentifier', '—') }}</td>
+                </tr>
+                <tr>
+                    <th>Client Identifier</th>
+                    <td>{{ rec.get('ClientIdentifier', '—') }}</td>
+                </tr>
+                <tr>
+                    <th>Message Type / Queue</th>
+                    <td>{{ rec.get('MessageTypeQueue', '—') }}</td>
+                </tr>
+                <tr>
+                    <th>Message Status</th>
+                    <td>
+                        <span class="badge {{ status_class }}">
+                            {{ rec.get('MessageStatus', 'UNKNOWN') }}
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Create Date/Time</th>
+                    <td>{{ rec.get('CreateDateTime', '—') }}</td>
+                </tr>
+                <tr>
+                    <th>Complete Date/Time</th>
+                    <td>{{ rec.get('CompleteDateTime') or '—' }}</td>
+                </tr>
+                <tr>
+                    <th>Message Body</th>
+                    <td>
+                        <button
+                            class="btn btn-view-msg btn-sm"
+                            data-record-id="{{ rec.get('RecordId', '') }}"
+                            data-msg-body="{{ rec.get('MessageBody', '') | e }}"
+                            onclick="openMsgBody(this)">
+                            <i class="bi bi-file-text me-1"></i>View Message Body
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        {% if rec.get('TibcoCaseData') %}
+        <!-- TIBCO Case Data fields -->
+        <div class="mb-3">
+            <h6 class="text-primary fw-semibold mb-2">
+                <i class="bi bi-database me-1"></i>TIBCO Case Data
+            </h6>
+            <table class="table table-bordered table-sm detail-table">
+                <tbody>
+                    {% for field_name, field_value in rec['TibcoCaseData'].items() %}
+                    <tr>
+                        <th>{{ field_name }}</th>
+                        <td>{{ field_value }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% endif %}
+
+        <!-- ── Resubmit button ──────────────────────────────────────── -->
+        <div class="d-flex justify-content-end pt-2 border-top" style="border-color:#f2d6db !important;">
+            <button
+                class="btn btn-resubmit rounded-pill"
+                onclick="confirmResubmit('{{ rec.get('CaseNumber', case_number) }}', '{{ rec.get('RecordId', '') }}')">
+                <i class="bi bi-arrow-repeat me-1"></i>Resubmit
+            </button>
+        </div>
+    </div>
+</div>
+{% endfor %}
+{% endif %}
+
+<!-- ══════════════════════════════════════════════════════════════════════
+     MODAL: Message Body Viewer
+═══════════════════════════════════════════════════════════════════════ -->
+<div class="modal fade" id="msgBodyModal" tabindex="-1" aria-labelledby="msgBodyModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content border-0">
+            <div class="modal-header py-2" style="background-color:#c60c30; color:white;">
+                <h5 class="modal-title" id="msgBodyModalLabel">
+                    <i class="bi bi-file-text me-1"></i>Message Body
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body" style="background-color:#fdf8f9;">
+                <div id="msgBodyLoading" class="text-center py-3" style="display:none;">
+                    <div class="spinner-border text-primary" role="status"></div>
+                </div>
+                <pre id="msgBodyContent">Select a record to view its message body.</pre>
+            </div>
+            <div class="modal-footer py-2" style="background-color:#fdf8f9;border-top-color:#f2d6db;">
+                <button type="button" class="btn btn-sm btn-primary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════════════════
+     MODAL: Resubmit Confirmation
+═══════════════════════════════════════════════════════════════════════ -->
+<div class="modal fade" id="resubmitConfirmModal" tabindex="-1" aria-hidden="true" data-bs-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered" style="max-width:460px;">
+        <div class="modal-content border-0">
+            <div class="modal-header py-2" style="background-color:#c60c30; color:white;">
+                <h5 class="modal-title">
+                    <i class="bi bi-arrow-repeat me-1"></i>Confirm Resubmit
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body py-3" style="background-color:#fdf8f9;">
+                <div class="d-flex align-items-center">
+                    <i class="bi bi-question-circle-fill me-3" style="font-size:1.8rem;color:#c60c30;"></i>
+                    <p class="mb-0" id="resubmitConfirmText" style="font-size:1rem;"></p>
+                </div>
+            </div>
+            <div class="modal-footer py-2" style="background-color:#fdf8f9;border-top-color:#f2d6db;">
+                <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">
+                    <i class="bi bi-x-circle me-1"></i>No
+                </button>
+                <button type="button" class="btn btn-sm btn-primary" id="resubmitYesBtn">
+                    <i class="bi bi-check-circle me-1"></i>Yes
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════════════════
+     MODAL: Resubmit Reason
+═══════════════════════════════════════════════════════════════════════ -->
+<div class="modal fade" id="resubmitReasonModal" tabindex="-1" aria-hidden="true" data-bs-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered" style="max-width:480px;">
+        <div class="modal-content border-0">
+            <div class="modal-header py-2" style="background-color:#c60c30; color:white;">
+                <h5 class="modal-title">
+                    <i class="bi bi-pencil-square me-1"></i>Reason for Resubmission
+                </h5>
+                <button type="button" class="btn-close btn-close-white" id="closeReasonModal"></button>
+            </div>
+            <div class="modal-body py-3" style="background-color:#fdf8f9;">
+                <p class="mb-2 text-muted" style="font-size:0.9rem;">
+                    Please provide a reason for resubmitting case <strong id="reasonCaseNum"></strong>:
+                </p>
+                <textarea
+                    id="resubmitReason"
+                    class="form-control"
+                    rows="4"
+                    placeholder="Enter reason for resubmission…"
+                    maxlength="500"></textarea>
+                <div class="d-flex justify-content-end mt-1">
+                    <small id="charCount" class="text-muted">0 / 500</small>
+                </div>
+                <div id="reasonError" class="alert alert-danger py-1 mt-2" style="display:none; font-size:0.85rem;">
+                    <i class="bi bi-exclamation-triangle-fill me-1"></i>
+                    <span id="reasonErrorText"></span>
+                </div>
+            </div>
+            <div class="modal-footer py-2" style="background-color:#fdf8f9;border-top-color:#f2d6db;">
+                <button type="button" class="btn btn-sm btn-secondary" id="cancelReasonBtn">
+                    <i class="bi bi-x-circle me-1"></i>Cancel
+                </button>
+                <button type="button" class="btn btn-sm btn-primary" id="submitResubmitBtn">
+                    <i class="bi bi-send me-1"></i>Submit Resubmit
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════════════════
+     MODAL: Resubmit Result (success / failure)
+═══════════════════════════════════════════════════════════════════════ -->
+<div class="modal fade" id="resubmitResultModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" style="max-width:440px;">
+        <div class="modal-content border-0">
+            <div class="modal-header py-2" id="resultModalHeader">
+                <h5 class="modal-title" id="resultModalTitle">Result</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body py-3" style="background-color:#fdf8f9;">
+                <div class="d-flex align-items-center">
+                    <i id="resultModalIcon" class="me-3" style="font-size:1.8rem;"></i>
+                    <p class="mb-0" id="resultModalMessage"></p>
+                </div>
+            </div>
+            <div class="modal-footer py-2" style="background-color:#fdf8f9;border-top-color:#f2d6db;">
+                <button type="button" class="btn btn-sm btn-primary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // ── State ──────────────────────────────────────────────────────────────
+    let _pendingCaseNumber = '';
+    let _pendingRecordId   = '';
+
+    // ── Bootstrap modal instances ──────────────────────────────────────────
+    const confirmModal  = new bootstrap.Modal(document.getElementById('resubmitConfirmModal'));
+    const reasonModal   = new bootstrap.Modal(document.getElementById('resubmitReasonModal'));
+    const resultModal   = new bootstrap.Modal(document.getElementById('resubmitResultModal'));
+    const msgBodyModal  = new bootstrap.Modal(document.getElementById('msgBodyModal'));
+
+    // ── Message Body ───────────────────────────────────────────────────────
+    function openMsgBody(btn) {
+        const recordId = btn.dataset.recordId;
+        const body     = btn.dataset.msgBody;   // may be pre-loaded
+
+        document.getElementById('msgBodyContent').textContent = '';
+
+        if (body) {
+            document.getElementById('msgBodyContent').textContent = body;
+            msgBodyModal.show();
+            return;
+        }
+
+        // Fetch via AJAX if no inline body
+        document.getElementById('msgBodyLoading').style.display = 'block';
+        msgBodyModal.show();
+
+        fetch(`/api/message-body?id=${encodeURIComponent(recordId)}`)
+            .then(r => r.json())
+            .then(data => {
+                document.getElementById('msgBodyLoading').style.display = 'none';
+                document.getElementById('msgBodyContent').textContent =
+                    data.body || data.error || '(empty)';
+            })
+            .catch(() => {
+                document.getElementById('msgBodyLoading').style.display = 'none';
+                document.getElementById('msgBodyContent').textContent =
+                    'Error loading message body.';
+            });
+    }
+
+    // ── Resubmit flow ──────────────────────────────────────────────────────
+    function confirmResubmit(caseNumber, recordId) {
+        _pendingCaseNumber = caseNumber;
+        _pendingRecordId   = recordId;
+
+        document.getElementById('resubmitConfirmText').textContent =
+            `Do you want to resubmit case number: ${caseNumber}?`;
+        confirmModal.show();
+    }
+
+    // "Yes" on confirm → open reason modal
+    document.getElementById('resubmitYesBtn').addEventListener('click', function () {
+        confirmModal.hide();
+        document.getElementById('resubmitReason').value = '';
+        document.getElementById('charCount').textContent = '0 / 500';
+        document.getElementById('reasonCaseNum').textContent = _pendingCaseNumber;
+        document.getElementById('reasonError').style.display = 'none';
+        reasonModal.show();
+    });
+
+    // Character counter
+    document.getElementById('resubmitReason').addEventListener('input', function () {
+        document.getElementById('charCount').textContent = `${this.value.length} / 500`;
+    });
+
+    // Cancel / close reason modal → go back to confirm
+    ['cancelReasonBtn', 'closeReasonModal'].forEach(function (id) {
+        document.getElementById(id).addEventListener('click', function () {
+            reasonModal.hide();
+        });
+    });
+
+    // Submit resubmit
+    document.getElementById('submitResubmitBtn').addEventListener('click', function () {
+        const reason = document.getElementById('resubmitReason').value.trim();
+        const errDiv = document.getElementById('reasonError');
+
+        if (!reason) {
+            errDiv.style.display = 'block';
+            document.getElementById('reasonErrorText').textContent =
+                'Please enter a reason before submitting.';
+            return;
+        }
+
+        errDiv.style.display = 'none';
+        const submitBtn = this;
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-1"></span>Submitting…';
+
+        fetch('/api/resubmit', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                case_number: _pendingCaseNumber,
+                record_id:   _pendingRecordId,
+                reason:      reason
+            })
+        })
+        .then(r => r.json())
+        .then(data => {
+            reasonModal.hide();
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = '<i class="bi bi-send me-1"></i>Submit Resubmit';
+
+            const header  = document.getElementById('resultModalHeader');
+            const icon    = document.getElementById('resultModalIcon');
+            const title   = document.getElementById('resultModalTitle');
+            const message = document.getElementById('resultModalMessage');
+
+            if (data.success) {
+                header.style.backgroundColor  = '#198754';
+                header.style.color            = 'white';
+                icon.className                = 'bi bi-check-circle-fill me-3';
+                icon.style.color              = '#198754';
+                title.textContent             = 'Resubmit Successful';
+                message.textContent           = data.message;
+            } else {
+                header.style.backgroundColor  = '#c60c30';
+                header.style.color            = 'white';
+                icon.className                = 'bi bi-x-circle-fill me-3';
+                icon.style.color              = '#c60c30';
+                title.textContent             = 'Resubmit Failed';
+                message.textContent           = data.error || 'An unexpected error occurred.';
+            }
+            resultModal.show();
+        })
+        .catch(() => {
+            reasonModal.hide();
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = '<i class="bi bi-send me-1"></i>Submit Resubmit';
+
+            document.getElementById('resultModalHeader').style.backgroundColor = '#c60c30';
+            document.getElementById('resultModalHeader').style.color = 'white';
+            document.getElementById('resultModalIcon').className = 'bi bi-x-circle-fill me-3';
+            document.getElementById('resultModalIcon').style.color = '#c60c30';
+            document.getElementById('resultModalTitle').textContent = 'Resubmit Failed';
+            document.getElementById('resultModalMessage').textContent =
+                'Network error. Please try again.';
+            resultModal.show();
+        });
+    });
+</script>
+{% endblock %}

@@ -1,0 +1,150 @@
+{% extends 'base.html' %}
+
+{% block extra_css %}
+<style>
+    .search-card {
+        max-width: 580px;
+        margin: 2rem auto 0;
+        border: none;
+        box-shadow: 0 4px 16px rgba(198, 12, 48, 0.12);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .search-card .card-header {
+        background-color: #c60c30;
+        color: white;
+        padding: 1rem 1.5rem;
+    }
+
+    .search-card .card-header h4 {
+        margin: 0;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    .search-card .card-body {
+        padding: 1.75rem;
+        background-color: #ffffff;
+    }
+
+    .divider-or {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        margin: 0.5rem 0 1rem;
+        color: #aaa;
+        font-size: 0.85rem;
+    }
+
+    .divider-or::before,
+    .divider-or::after {
+        content: '';
+        flex: 1;
+        border-top: 1px solid #e0c8cc;
+    }
+
+    .btn-search {
+        background-color: #c60c30;
+        border-color: #c60c30;
+        color: #fff;
+        min-width: 140px;
+        font-weight: 500;
+        transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .btn-search:hover {
+        background-color: #a50a28;
+        border-color: #a50a28;
+        box-shadow: 0 4px 10px rgba(198, 12, 48, 0.3);
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+
+<!-- Loading Overlay -->
+<div id="loading-overlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%;
+     background-color:rgba(255,255,255,0.7); z-index:9999;">
+    <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="text-center">
+            <div class="spinner-border text-primary" role="status" style="width:3rem;height:3rem;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <p class="mt-2 fw-bold text-primary">Searching, please wait…</p>
+        </div>
+    </div>
+</div>
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item active">Search</li>
+    </ol>
+</nav>
+
+<div class="card search-card">
+    <div class="card-header">
+        <h4><i class="bi bi-search me-2"></i>Case Resubmit Search</h4>
+    </div>
+    <div class="card-body">
+
+        {% if error %}
+        <div class="alert alert-danger d-flex align-items-center py-2 mb-3">
+            <i class="bi bi-exclamation-triangle-fill me-2"></i>
+            <span>{{ error }}</span>
+        </div>
+        {% endif %}
+
+        <form method="POST" action="{{ url_for('main.search') }}" id="searchForm">
+            <div class="mb-3">
+                <label for="case_number" class="form-label fw-semibold">Case Number</label>
+                <div class="input-group">
+                    <span class="input-group-text" style="background:#fdf8f9;color:#c60c30;">
+                        <i class="bi bi-hash"></i>
+                    </span>
+                    <input
+                        type="text"
+                        id="case_number"
+                        name="case_number"
+                        class="form-control"
+                        placeholder="e.g. 123456"
+                        value="{{ request.form.get('case_number', '') }}">
+                </div>
+            </div>
+
+            <div class="divider-or">AND</div>
+
+            <div class="mb-4">
+                <label for="guid" class="form-label fw-semibold">GUID</label>
+                <div class="input-group">
+                    <span class="input-group-text" style="background:#fdf8f9;color:#c60c30;">
+                        <i class="bi bi-key"></i>
+                    </span>
+                    <input
+                        type="text"
+                        id="guid"
+                        name="guid"
+                        class="form-control"
+                        placeholder="e.g. a1b2c3d4-e5f6-7890-abcd-ef1234567890"
+                        value="{{ request.form.get('guid', '') }}">
+                </div>
+                <div class="form-text">Both Case Number and GUID are required.</div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-search rounded-pill px-4" id="searchBtn">
+                    <i class="bi bi-search me-1"></i> Search
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    document.getElementById('searchForm').addEventListener('submit', function () {
+        document.getElementById('loading-overlay').style.display = 'block';
+    });
+</script>
+{% endblock %}

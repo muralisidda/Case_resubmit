@@ -1,0 +1,159 @@
+/* ──────────────────────────────────────────────────────────────────────
+   Case Resubmit Application – AJ Bell Theme
+   Mirrors the styling conventions of TIBCO Audit Viewer
+────────────────────────────────────────────────────────────────────── */
+
+/* ── Card ─────────────────────────────────────────────────────────── */
+.card {
+    margin-bottom: 20px;
+    box-shadow: 0 0.125rem 0.25rem rgba(198, 12, 48, 0.1);
+}
+
+.card-header {
+    background-color: #faf0f2;
+    color: #c60c30;
+    font-weight: 600;
+}
+
+/* ── Table ────────────────────────────────────────────────────────── */
+.table-responsive {
+    overflow-x: auto;
+}
+
+.table th {
+    background-color: #c60c30;
+    color: #ffffff;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #fdf8f9;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f2d6db;
+}
+
+/* ── Buttons ──────────────────────────────────────────────────────── */
+.btn-primary {
+    background-color: #c60c30;
+    border-color: #c60c30;
+}
+
+.btn-primary:hover {
+    background-color: #a50a28;
+    border-color: #a50a28;
+}
+
+.btn-danger {
+    background-color: #c60c30;
+    border-color: #c60c30;
+}
+
+.btn-secondary {
+    color: #c60c30;
+    background-color: #fff;
+    border-color: #c60c30;
+}
+
+.btn-secondary:hover {
+    color: #fff;
+    background-color: #c60c30;
+    border-color: #c60c30;
+}
+
+.rounded-pill {
+    border-radius: 50px !important;
+}
+
+.btn-primary.rounded-pill {
+    min-width: 100px;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 2px 5px rgba(198, 12, 48, 0.2);
+}
+
+.btn-primary.rounded-pill:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(198, 12, 48, 0.3);
+}
+
+/* ── Badges ───────────────────────────────────────────────────────── */
+.badge {
+    font-size: 0.85em;
+    padding: 0.35em 0.65em;
+}
+
+/* ── Navbar ───────────────────────────────────────────────────────── */
+.navbar {
+    background-color: #c60c30 !important;
+}
+
+.navbar-brand, .nav-link {
+    color: #ffffff !important;
+}
+
+.nav-link:hover {
+    color: #f2d6db !important;
+}
+
+/* ── Footer ───────────────────────────────────────────────────────── */
+.footer {
+    margin-top: 2rem;
+    padding: 1rem 0;
+    border-top: 1px solid #f2d6db;
+    background-color: #fdf8f9;
+    color: #333333;
+}
+
+/* ── Links ────────────────────────────────────────────────────────── */
+a {
+    color: #c60c30;
+}
+
+a:hover {
+    color: #a50a28;
+    text-decoration: none;
+}
+
+/* ── Form focus ───────────────────────────────────────────────────── */
+.form-control:focus {
+    border-color: #c60c30;
+    box-shadow: 0 0 0 0.2rem rgba(198, 12, 48, 0.25);
+}
+
+.form-select:focus {
+    border-color: #c60c30;
+    box-shadow: 0 0 0 0.2rem rgba(198, 12, 48, 0.25);
+}
+
+/* ── Text colours ─────────────────────────────────────────────────── */
+.text-primary {
+    color: #c60c30 !important;
+}
+
+/* ── Breadcrumb ───────────────────────────────────────────────────── */
+.breadcrumb-item a {
+    color: #c60c30;
+}
+
+/* ── Input group icon colour ──────────────────────────────────────── */
+.input-group-text {
+    background-color: #fdf8f9;
+    border-color: #dee2e6;
+    color: #c60c30;
+}
+
+/* ── Scrollable pre block ─────────────────────────────────────────── */
+.pre-scrollable {
+    max-height: 350px;
+    overflow-y: auto;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #f2d6db;
+}
+
+/* ── Progress bar ─────────────────────────────────────────────────── */
+.progress-bar {
+    background-color: #c60c30;
+}

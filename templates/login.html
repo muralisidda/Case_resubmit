@@ -1,0 +1,161 @@
+{% extends 'base.html' %}
+
+{% block extra_css %}
+<style>
+    body {
+        background-color: #fdf8f9;
+    }
+
+    .login-wrapper {
+        min-height: calc(100vh - 160px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .login-card {
+        width: 100%;
+        max-width: 440px;
+        border: none;
+        box-shadow: 0 4px 20px rgba(198, 12, 48, 0.15);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .login-card .card-header {
+        background-color: #c60c30;
+        color: white;
+        padding: 1.5rem 2rem;
+        text-align: center;
+    }
+
+    .login-card .card-header .logo-wrap {
+        height: 48px;
+        margin-bottom: 0.75rem;
+        filter: brightness(0) invert(1);
+    }
+
+    .login-card .card-header h5 {
+        font-size: 1.1rem;
+        font-weight: 500;
+        margin: 0;
+        letter-spacing: 0.02em;
+    }
+
+    .login-card .card-body {
+        padding: 2rem;
+        background-color: #ffffff;
+    }
+
+    .login-card .form-control:focus {
+        border-color: #c60c30;
+        box-shadow: 0 0 0 0.2rem rgba(198, 12, 48, 0.2);
+    }
+
+    .login-card .btn-login {
+        background-color: #c60c30;
+        border-color: #c60c30;
+        color: #fff;
+        width: 100%;
+        padding: 0.6rem;
+        font-weight: 500;
+        letter-spacing: 0.03em;
+        transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .login-card .btn-login:hover {
+        background-color: #a50a28;
+        border-color: #a50a28;
+        box-shadow: 0 4px 10px rgba(198, 12, 48, 0.3);
+    }
+
+    .input-group-text {
+        background-color: #fdf8f9;
+        border-color: #dee2e6;
+        color: #c60c30;
+    }
+
+    .hint-text {
+        font-size: 0.78rem;
+        color: #999;
+        text-align: center;
+        margin-top: 1rem;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="login-wrapper">
+    <div class="card login-card">
+        <div class="card-header">
+            <img src="{{ url_for('static', filename='img/logo.png') }}" alt="AJ Bell Logo" class="logo-wrap">
+            <h5>{{ config.get('Environment', 'ENV3') }} - TIBCO Case Resubmit</h5>
+        </div>
+        <div class="card-body">
+
+            {% if error %}
+            <div class="alert alert-danger d-flex align-items-center py-2 mb-3" role="alert">
+                <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                <span>{{ error }}</span>
+            </div>
+            {% endif %}
+
+            <form method="POST" action="{{ url_for('main.login') }}" autocomplete="off">
+                <div class="mb-3">
+                    <label for="username" class="form-label fw-semibold">Username</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
+                        <input
+                            type="text"
+                            id="username"
+                            name="username"
+                            class="form-control"
+                            placeholder="Enter your username"
+                            required
+                            autofocus>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <label for="password" class="form-label fw-semibold">Password</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-lock-fill"></i></span>
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            class="form-control"
+                            placeholder="Enter your password"
+                            required>
+                        <button class="btn btn-outline-secondary" type="button" id="togglePassword" tabindex="-1">
+                            <i class="bi bi-eye" id="toggleIcon"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-login">
+                    <i class="bi bi-box-arrow-in-right me-1"></i> Sign In
+                </button>
+            </form>
+
+            <p class="hint-text">Default: <strong>admin</strong> / <strong>admin123</strong></p>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    document.getElementById('togglePassword').addEventListener('click', function () {
+        const pwd = document.getElementById('password');
+        const icon = document.getElementById('toggleIcon');
+        if (pwd.type === 'password') {
+            pwd.type = 'text';
+            icon.classList.replace('bi-eye', 'bi-eye-slash');
+        } else {
+            pwd.type = 'password';
+            icon.classList.replace('bi-eye-slash', 'bi-eye');
+        }
+    });
+</script>
+{% endblock %}

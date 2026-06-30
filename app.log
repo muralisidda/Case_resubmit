@@ -1,0 +1,213 @@
+2026-06-30 12:14:21,804 - root - INFO - Case Resubmit Application started.
+2026-06-30 12:14:23,268 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.44.96.74:5000
+2026-06-30 12:14:23,270 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-30 12:14:23,307 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 12:14:23,900 - root - INFO - Case Resubmit Application started.
+2026-06-30 12:14:23,916 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 12:14:23,920 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 12:14:33,525 - root - INFO - Request: GET http://localhost:5000/
+2026-06-30 12:14:33,526 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:14:33] "[32mGET / HTTP/1.1[0m" 302 -
+2026-06-30 12:14:33,771 - root - INFO - Request: GET http://localhost:5000/login
+2026-06-30 12:14:33,981 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:14:33] "GET /login HTTP/1.1" 200 -
+2026-06-30 12:14:34,037 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 12:14:34,166 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:14:34] "GET /static/css/styles.css HTTP/1.1" 200 -
+2026-06-30 12:14:35,785 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 12:14:35,818 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:14:35] "GET /static/img/logo.png HTTP/1.1" 200 -
+2026-06-30 12:14:36,036 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 12:14:36,061 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:14:36] "GET /static/js/scripts.js HTTP/1.1" 200 -
+2026-06-30 12:14:37,861 - root - INFO - Request: GET http://127.0.0.1:5000/
+2026-06-30 12:14:37,861 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:14:37] "[32mGET / HTTP/1.1[0m" 302 -
+2026-06-30 12:14:37,866 - root - INFO - Request: GET http://127.0.0.1:5000/login
+2026-06-30 12:14:37,866 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:14:37] "GET /login HTTP/1.1" 200 -
+2026-06-30 12:14:38,339 - root - INFO - Request: GET http://127.0.0.1:5000/static/css/styles.css
+2026-06-30 12:14:38,342 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:14:38] "GET /static/css/styles.css HTTP/1.1" 200 -
+2026-06-30 12:14:38,352 - root - INFO - Request: GET http://127.0.0.1:5000/static/img/logo.png
+2026-06-30 12:14:38,354 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:14:38] "GET /static/img/logo.png HTTP/1.1" 200 -
+2026-06-30 12:14:39,356 - root - INFO - Request: GET http://localhost:5000/static/img/Sybmol.png
+2026-06-30 12:14:39,378 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:14:39] "GET /static/img/Sybmol.png HTTP/1.1" 200 -
+2026-06-30 12:14:39,445 - root - INFO - Request: GET http://127.0.0.1:5000/static/js/scripts.js
+2026-06-30 12:14:39,450 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:14:39] "GET /static/js/scripts.js HTTP/1.1" 200 -
+2026-06-30 12:14:41,301 - root - INFO - Request: GET http://127.0.0.1:5000/static/img/Sybmol.png
+2026-06-30 12:14:41,316 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:14:41] "GET /static/img/Sybmol.png HTTP/1.1" 200 -
+2026-06-30 12:14:49,550 - root - INFO - Request: POST http://localhost:5000/login
+2026-06-30 12:14:49,568 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:14:49] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-30 12:14:49,817 - root - INFO - Request: GET http://localhost:5000/search
+2026-06-30 12:14:49,912 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:14:49] "GET /search HTTP/1.1" 200 -
+2026-06-30 12:14:49,959 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 12:14:49,963 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:14:49] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 12:14:50,268 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 12:14:50,268 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 12:14:50,268 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:14:50] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+2026-06-30 12:14:50,285 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:14:50] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2026-06-30 12:14:57,302 - root - INFO - Request: POST http://localhost:5000/search
+2026-06-30 12:14:57,304 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:14:57] "[32mPOST /search HTTP/1.1[0m" 302 -
+2026-06-30 12:14:57,568 - root - INFO - Request: GET http://localhost:5000/resubmit-details?case_number=1312324&guid=1324fdsfe6erg45tg
+2026-06-30 12:14:58,124 - database.connection - WARNING - [PlatformSupportDB] Could not connect to database: ('28000', "[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'sa'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'sa'. (18456)"). Application will use mock data.
+2026-06-30 12:14:58,167 - werkzeug - INFO -  * Detected change in 'C:\\Users\\msidd\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\app.py', reloading
+2026-06-30 12:14:58,249 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:14:58] "[35m[1mGET /resubmit-details?case_number=1312324&guid=1324fdsfe6erg45tg HTTP/1.1[0m" 500 -
+2026-06-30 12:14:58,300 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:14:58] "GET /resubmit-details?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2026-06-30 12:14:58,593 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 12:14:59,128 - root - INFO - Case Resubmit Application started.
+2026-06-30 12:14:59,141 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 12:14:59,141 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 12:14:59,317 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:14:59] "GET /resubmit-details?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2026-06-30 12:14:59,673 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:14:59] "GET /resubmit-details?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2026-06-30 12:14:59,938 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:14:59] "[36mGET /resubmit-details?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-06-30 12:15:33,829 - root - INFO - Request: POST http://localhost:5000/login
+2026-06-30 12:15:33,838 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:15:33] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-30 12:15:34,158 - root - INFO - Request: GET http://localhost:5000/search
+2026-06-30 12:15:34,200 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:15:34] "GET /search HTTP/1.1" 200 -
+2026-06-30 12:15:34,420 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 12:15:34,420 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:15:34] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 12:15:34,536 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 12:15:34,536 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 12:15:34,536 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:15:34] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+2026-06-30 12:15:34,553 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:15:34] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2026-06-30 12:16:09,351 - werkzeug - INFO -  * Detected change in 'C:\\Users\\msidd\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\os.py', reloading
+2026-06-30 12:16:10,232 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 12:16:10,779 - root - INFO - Case Resubmit Application started.
+2026-06-30 12:16:10,781 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 12:16:10,794 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 12:17:04,063 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\app\\routes.py', reloading
+2026-06-30 12:17:04,063 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\app\\routes.py', reloading
+2026-06-30 12:17:04,063 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\app\\routes.py', reloading
+2026-06-30 12:17:04,675 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 12:17:05,367 - root - INFO - Case Resubmit Application started.
+2026-06-30 12:17:05,398 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 12:17:05,398 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 12:17:20,135 - root - INFO - Request: POST http://localhost:5000/search
+2026-06-30 12:17:20,281 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:17:20] "POST /search HTTP/1.1" 200 -
+2026-06-30 12:17:20,387 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 12:17:20,616 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 12:17:20,623 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 12:17:20,881 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:17:20] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 12:17:21,130 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:17:21] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2026-06-30 12:17:21,164 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:17:21] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+2026-06-30 12:17:26,871 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\app\\routes.py', reloading
+2026-06-30 12:17:26,871 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\run.py', reloading
+2026-06-30 12:17:26,871 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\app\\routes.py', reloading
+2026-06-30 12:17:26,871 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\run.py', reloading
+2026-06-30 12:17:26,871 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\app\\routes.py', reloading
+2026-06-30 12:17:26,881 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\run.py', reloading
+2026-06-30 12:17:27,815 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 12:17:28,351 - root - INFO - Case Resubmit Application started.
+2026-06-30 12:17:28,362 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 12:17:28,365 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 12:32:37,997 - root - INFO - Case Resubmit Application started.
+2026-06-30 12:32:39,515 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.44.96.74:5000
+2026-06-30 12:32:39,515 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-30 12:32:39,537 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 12:32:40,171 - root - INFO - Case Resubmit Application started.
+2026-06-30 12:32:40,195 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 12:32:40,201 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 12:32:40,232 - root - INFO - Request: GET http://localhost:5000/
+2026-06-30 12:32:40,232 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:32:40] "[32mGET / HTTP/1.1[0m" 302 -
+2026-06-30 12:32:40,232 - root - INFO - Request: GET http://localhost:5000/search
+2026-06-30 12:32:40,403 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:32:40] "GET /search HTTP/1.1" 200 -
+2026-06-30 12:32:40,767 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 12:32:40,768 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 12:32:40,798 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 12:32:41,045 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:32:41] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 12:32:41,072 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:32:41] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+2026-06-30 12:32:41,150 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:32:41] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2026-06-30 12:32:41,327 - root - INFO - Request: GET http://localhost:5000/static/img/Sybmol.png
+2026-06-30 12:32:41,327 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:32:41] "[36mGET /static/img/Sybmol.png HTTP/1.1[0m" 304 -
+2026-06-30 12:32:44,321 - root - INFO - Request: GET http://localhost:5000/logout
+2026-06-30 12:32:44,323 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:32:44] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-06-30 12:32:44,569 - root - INFO - Request: GET http://localhost:5000/login
+2026-06-30 12:32:44,675 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:32:44] "GET /login HTTP/1.1" 200 -
+2026-06-30 12:32:44,722 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 12:32:44,727 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:32:44] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 12:32:45,037 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 12:32:45,041 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 12:32:45,044 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:32:45] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+2026-06-30 12:32:45,048 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:32:45] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2026-06-30 12:32:51,866 - root - INFO - Request: POST http://localhost:5000/login
+2026-06-30 12:32:51,866 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:32:51] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-30 12:32:52,134 - root - INFO - Request: GET http://localhost:5000/search
+2026-06-30 12:32:52,138 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:32:52] "GET /search HTTP/1.1" 200 -
+2026-06-30 12:32:52,195 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 12:32:52,201 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:32:52] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 12:32:52,501 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 12:32:52,504 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 12:32:52,504 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:32:52] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+2026-06-30 12:32:52,512 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:32:52] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2026-06-30 12:32:57,225 - root - INFO - Request: GET http://localhost:5000/logout
+2026-06-30 12:32:57,226 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:32:57] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-06-30 12:32:57,483 - root - INFO - Request: GET http://localhost:5000/login
+2026-06-30 12:32:57,486 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:32:57] "GET /login HTTP/1.1" 200 -
+2026-06-30 12:32:57,550 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 12:32:57,554 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:32:57] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 12:32:57,840 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 12:32:57,842 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 12:32:57,846 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:32:57] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+2026-06-30 12:32:57,851 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:32:57] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2026-06-30 12:33:18,121 - root - INFO - Request: POST http://localhost:5000/login
+2026-06-30 12:33:18,123 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:33:18] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-30 12:33:18,452 - root - INFO - Request: GET http://localhost:5000/search
+2026-06-30 12:33:18,459 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:33:18] "GET /search HTTP/1.1" 200 -
+2026-06-30 12:33:18,702 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 12:33:18,707 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:33:18] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 12:33:18,803 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 12:33:18,805 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 12:33:18,810 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:33:18] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+2026-06-30 12:33:18,812 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:33:18] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2026-06-30 12:34:02,821 - root - INFO - Request: GET http://localhost:5000/logout
+2026-06-30 12:34:02,823 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:34:02] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-06-30 12:34:03,152 - root - INFO - Request: GET http://localhost:5000/login
+2026-06-30 12:34:03,156 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:34:03] "GET /login HTTP/1.1" 200 -
+2026-06-30 12:34:03,389 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 12:34:03,392 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:34:03] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 12:34:03,518 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 12:34:03,521 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 12:34:03,525 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:34:03] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+2026-06-30 12:34:03,527 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 12:34:03] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2026-06-30 13:28:23,772 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\database\\connection.py', reloading
+2026-06-30 13:28:23,800 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\run.py', reloading
+2026-06-30 13:28:24,682 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 13:28:25,381 - root - INFO - Case Resubmit Application started.
+2026-06-30 13:28:25,396 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 13:28:25,396 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 13:28:37,459 - werkzeug - INFO -  * Detected change in 'C:\\Users\\msidd\\AppData\\Roaming\\Python\\Python310\\site-packages\\colorama\\tests\\__init__.py', reloading
+2026-06-30 13:28:37,620 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 13:28:38,200 - root - INFO - Case Resubmit Application started.
+2026-06-30 13:28:38,213 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 13:28:38,217 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 13:39:04,415 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_db_connections.py', reloading
+2026-06-30 13:39:04,584 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_db_connections.py', reloading
+2026-06-30 13:39:04,587 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_db_connections.py', reloading
+2026-06-30 13:39:05,112 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 13:39:07,090 - root - INFO - Case Resubmit Application started.
+2026-06-30 13:39:07,118 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 13:39:07,124 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 13:46:40,297 - root - INFO - Request: POST http://localhost:5000/login
+2026-06-30 13:46:40,316 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 13:46:40] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-30 13:46:40,561 - root - INFO - Request: GET http://localhost:5000/search
+2026-06-30 13:46:40,767 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 13:46:40] "GET /search HTTP/1.1" 200 -
+2026-06-30 13:46:40,870 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 13:46:41,176 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 13:46:41,177 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 13:46:41,734 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 13:46:41] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 13:46:42,107 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 13:46:42] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+2026-06-30 13:46:42,166 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 13:46:42] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2026-06-30 13:48:23,416 - root - INFO - Request: POST http://localhost:5000/search
+2026-06-30 13:48:23,419 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 13:48:23] "POST /search HTTP/1.1" 200 -
+2026-06-30 13:48:23,686 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 13:48:23,692 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 13:48:23] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 13:48:23,787 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 13:48:23,788 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 13:48:23,791 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 13:48:23] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+2026-06-30 13:48:23,793 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 13:48:23] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2026-06-30 13:50:21,614 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_db_connections.py', reloading
+2026-06-30 13:50:21,617 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_db_connections.py', reloading
+2026-06-30 13:50:21,618 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_db_connections.py', reloading
+2026-06-30 13:50:21,886 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 13:50:22,816 - root - INFO - Case Resubmit Application started.
+2026-06-30 13:50:22,842 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 13:50:22,847 - werkzeug - INFO -  * Debugger PIN: 123-554-726
