@@ -64,6 +64,20 @@
         color: #fff;
     }
 
+    .btn-amend-status {
+        background-color: #0d6efd;
+        border-color: #0d6efd;
+        color: #fff;
+        font-size: 0.82rem;
+        padding: 0.25rem 0.75rem;
+    }
+
+    .btn-amend-status:hover {
+        background-color: #0b5ed7;
+        border-color: #0a58ca;
+        color: #fff;
+    }
+
     .btn-resubmit {
         background-color: #c60c30;
         border-color: #c60c30;
@@ -126,8 +140,9 @@
         </h3>
         <small class="text-muted">
             {% if case_number %}Case Number: <strong>{{ case_number }}</strong>{% endif %}
-            {% if case_number and guid %} &nbsp;|&nbsp; {% endif %}
-            {% if guid %}GUID: <strong>{{ guid }}</strong>{% endif %}
+            {% if tibco_record and tibco_record.get('MessageIdentifier') %}
+            &nbsp;|&nbsp; GUID: <strong>{{ tibco_record.get('MessageIdentifier') }}</strong>
+            {% endif %}
         </small>
     </div>
     <a href="{{ url_for('main.search') }}" class="btn btn-outline-secondary btn-sm rounded-pill">
@@ -144,35 +159,27 @@
 {% endif %}
 
 <!-- ── No results ─────────────────────────────────────────────────────── -->
-{% if not records %}
+{% if not tibco_record %}
 <div class="card" style="border-color:#f2d6db;">
     <div class="card-body text-center py-5">
         <i class="bi bi-search" style="font-size:2.5rem;color:#c60c30;opacity:0.4;"></i>
-        <p class="mt-3 mb-0 text-muted">No records found for the given search criteria.</p>
+        <p class="mt-3 mb-0 text-muted">No records found for case number <strong>{{ case_number }}</strong>.</p>
         <a href="{{ url_for('main.search') }}" class="btn btn-sm btn-primary mt-3">Try another search</a>
     </div>
 </div>
 
 {% else %}
 
-<!-- ── Records ─────────────────────────────────────────────────────────── -->
-{% for rec in records %}
-{% set status_lower = (rec.get('MessageStatus') or 'unknown') | lower %}
-{% set status_class =
-    'status-failed'  if status_lower == 'failed'  else
-    'status-success' if status_lower == 'success' else
-    'status-pending' if status_lower == 'pending' else
-    'status-unknown'
-%}
-
+<!-- ── TIBCO Case Message Record ────────────────────────────────────────── -->
 <div class="card record-card">
     <div class="card-header">
         <span>
             <i class="bi bi-card-list me-1"></i>
-            Record {{ loop.index }} &nbsp;|&nbsp; {{ rec.get('ProcedureName', 'N/A') }}
+            Case {{ tibco_record.get('CaseNum', case_number) }}
+            &nbsp;|&nbsp; {{ tibco_record.get('ProcName', 'N/A') }}
         </span>
-        <span class="badge {{ status_class }} ms-2" style="font-size:0.85rem;">
-            {{ rec.get('MessageStatus', 'UNKNOWN') }}
+        <span class="badge status-unknown ms-2" style="font-size:0.85rem;">
+            TIBCO Record
         </span>
     </div>
 
@@ -180,86 +187,112 @@
         <table class="table table-bordered detail-table mb-3">
             <tbody>
                 <tr>
+                    <th>Case Number</th>
+                    <td>{{ tibco_record.get('CaseNum', '—') }}</td>
+                </tr>
+                <tr>
+                    <th>Investor ID</th>
+                    <td>{{ tibco_record.get('InvestorId', '—') }}</td>
+                </tr>
+                <tr>
+                    <th>Process ID</th>
+                    <td>{{ tibco_record.get('ProcId', '—') }}</td>
+                </tr>
+                <tr>
                     <th>TIBCO iProcess Procedure</th>
-                    <td>{{ rec.get('ProcedureName', '—') }}</td>
+                    <td>{{ tibco_record.get('ProcName', '—') }}</td>
+                </tr>
+                <tr>
+                    <th>Case Started</th>
+                    <td>{{ tibco_record.get('CaseStarted', '—') }}</td>
                 </tr>
                 <tr>
                     <th>Message Identifier</th>
-                    <td>{{ rec.get('MessageIdentifier', '—') }}</td>
+                    <td><code>{{ tibco_record.get('MessageIdentifier', '—') }}</code></td>
                 </tr>
                 <tr>
                     <th>Adviser Identifier</th>
-                    <td>{{ rec.get('AdviserIdentifier', '—') }}</td>
+                    <td>{{ tibco_record.get('AdviserIdentifier', '—') }}</td>
                 </tr>
                 <tr>
                     <th>Client Identifier</th>
-                    <td>{{ rec.get('ClientIdentifier', '—') }}</td>
+                    <td>{{ tibco_record.get('ClientIdentifier', '—') }}</td>
                 </tr>
                 <tr>
-                    <th>Message Type / Queue</th>
-                    <td>{{ rec.get('MessageTypeQueue', '—') }}</td>
+                    <th>Message Type</th>
+                    <td>{{ tibco_record.get('MessageType', '—') }}</td>
                 </tr>
                 <tr>
                     <th>Message Status</th>
                     <td>
-                        <span class="badge {{ status_class }}">
-                            {{ rec.get('MessageStatus', 'UNKNOWN') }}
+                        {% set ms = tibco_record.get('MessageStatus', '') %}
+                        {% set ms_is_one = (ms|string == '1') %}
+                        <span id="msgStatusBadge" class="badge
+                            {% if ms_is_one %}status-success
+                            {% elif ms|upper == 'FAILED' %}status-failed
+                            {% elif ms|upper in ['SUCCESS', 'COMPLETED'] %}status-success
+                            {% elif ms|upper == 'PENDING' %}status-pending
+                            {% else %}status-unknown{% endif %}">
+                            {{ ms if ms else '—' }}
                         </span>
+                        {% if tibco_record.get('MessageIdentifier') and not ms_is_one %}
+                        <button
+                            id="amendStatusBtn"
+                            class="btn btn-amend-status rounded-pill ms-2"
+                            data-msg-id="{{ tibco_record.get('MessageIdentifier', '') }}">
+                            <i class="bi bi-pencil-square me-1"></i>Amend Status
+                        </button>
+                        {% endif %}
                     </td>
-                </tr>
-                <tr>
-                    <th>Create Date/Time</th>
-                    <td>{{ rec.get('CreateDateTime', '—') }}</td>
-                </tr>
-                <tr>
-                    <th>Complete Date/Time</th>
-                    <td>{{ rec.get('CompleteDateTime') or '—' }}</td>
                 </tr>
                 <tr>
                     <th>Message Body</th>
                     <td>
-                        <button
-                            class="btn btn-view-msg btn-sm"
-                            data-record-id="{{ rec.get('RecordId', '') }}"
-                            data-msg-body="{{ rec.get('MessageBody', '') | e }}"
-                            onclick="openMsgBody(this)">
-                            <i class="bi bi-file-text me-1"></i>View Message Body
+                        {% if tibco_record.get('MessageBody') %}
+                        <button class="btn btn-view-msg rounded-pill"
+                                onclick="openMsgBody(this)"
+                                data-msg-body="{{ tibco_record.get('MessageBody', '') }}">
+                            <i class="bi bi-file-code me-1"></i>View XML
                         </button>
+                        {% else %}
+                        <span class="text-muted">—</span>
+                        {% endif %}
                     </td>
+                </tr>
+                <tr>
+                    <th>Create Date/Time</th>
+                    <td>{{ tibco_record.get('CreateDateTime', '—') }}</td>
+                </tr>
+                <tr>
+                    <th>Completed Date/Time</th>
+                    <td>{{ tibco_record.get('CompletedDateTime', '—') if tibco_record.get('CompletedDateTime') else '—' }}</td>
+                </tr>
+                <tr>
+                    <th>Time Difference (seconds)</th>
+                    <td>{{ tibco_record.get('DiffSeconds', '—') }}</td>
                 </tr>
             </tbody>
         </table>
 
-        {% if rec.get('TibcoCaseData') %}
-        <!-- TIBCO Case Data fields -->
-        <div class="mb-3">
-            <h6 class="text-primary fw-semibold mb-2">
-                <i class="bi bi-database me-1"></i>TIBCO Case Data
-            </h6>
-            <table class="table table-bordered table-sm detail-table">
-                <tbody>
-                    {% for field_name, field_value in rec['TibcoCaseData'].items() %}
-                    <tr>
-                        <th>{{ field_name }}</th>
-                        <td>{{ field_value }}</td>
-                    </tr>
-                    {% endfor %}
-                </tbody>
-            </table>
-        </div>
-        {% endif %}
-
         <!-- ── Resubmit button ──────────────────────────────────────── -->
         <div class="d-flex justify-content-end pt-2 border-top" style="border-color:#f2d6db !important;">
+            {% set ms = tibco_record.get('MessageStatus', '') %}
+            {% set status_is_one = (ms|string == '1') %}
             <button
+                id="resubmitBtn"
                 class="btn btn-resubmit rounded-pill"
-                onclick="confirmResubmit('{{ rec.get('CaseNumber', case_number) }}', '{{ rec.get('RecordId', '') }}')">
+                {% if not status_is_one %}disabled title="Amend Message Status to 1 before resubmitting"{% endif %}
+                data-case-num="{{ tibco_record.get('CaseNum', case_number) }}"
+                data-record-id="{{ tibco_record.get('MessageIdentifier', '') }}"
+                data-investor-id="{{ tibco_record.get('InvestorId', '') }}"
+                data-proc-name="{{ tibco_record.get('ProcName', '') }}"
+                onclick="confirmResubmit(this)">
                 <i class="bi bi-arrow-repeat me-1"></i>Resubmit
             </button>
         </div>
     </div>
 </div>
-{% endfor %}
+
 {% endif %}
 
 <!-- ══════════════════════════════════════════════════════════════════════
@@ -363,16 +396,30 @@
      MODAL: Resubmit Result (success / failure)
 ═══════════════════════════════════════════════════════════════════════ -->
 <div class="modal fade" id="resubmitResultModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" style="max-width:440px;">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content border-0">
             <div class="modal-header py-2" id="resultModalHeader">
                 <h5 class="modal-title" id="resultModalTitle">Result</h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
             </div>
             <div class="modal-body py-3" style="background-color:#fdf8f9;">
-                <div class="d-flex align-items-center">
-                    <i id="resultModalIcon" class="me-3" style="font-size:1.8rem;"></i>
+                <div class="d-flex align-items-start mb-3">
+                    <i id="resultModalIcon" class="me-3 mt-1" style="font-size:1.8rem;"></i>
                     <p class="mb-0" id="resultModalMessage"></p>
+                </div>
+                <div id="resultModalDetails" style="display:none;">
+                    <div class="mb-2">
+                        <small class="text-muted fw-semibold">QUEUE</small>
+                        <div id="resultModalQueue" class="font-monospace" style="font-size:0.85rem;"></div>
+                    </div>
+                    <div class="mb-2">
+                        <small class="text-muted fw-semibold">MESSAGE SENT</small>
+                        <pre id="resultModalXml" style="white-space:pre-wrap;word-break:break-all;font-size:0.78rem;max-height:180px;overflow-y:auto;background:#f0f4f8;border:1px solid #dde3ea;border-radius:4px;padding:0.75rem;margin-top:0.25rem;"></pre>
+                    </div>
+                    <div id="resultResponseSection" style="display:none;">
+                        <small class="text-muted fw-semibold">EMS RESPONSE</small>
+                        <pre id="resultModalResponse" style="white-space:pre-wrap;word-break:break-all;font-size:0.78rem;max-height:180px;overflow-y:auto;background:#f0f4f8;border:1px solid #dde3ea;border-radius:4px;padding:0.75rem;margin-top:0.25rem;"></pre>
+                    </div>
                 </div>
             </div>
             <div class="modal-footer py-2" style="background-color:#fdf8f9;border-top-color:#f2d6db;">
@@ -389,12 +436,69 @@
     // ── State ──────────────────────────────────────────────────────────────
     let _pendingCaseNumber = '';
     let _pendingRecordId   = '';
+    let _pendingInvestorId = '';
+    let _pendingProcName   = '';
 
     // ── Bootstrap modal instances ──────────────────────────────────────────
     const confirmModal  = new bootstrap.Modal(document.getElementById('resubmitConfirmModal'));
     const reasonModal   = new bootstrap.Modal(document.getElementById('resubmitReasonModal'));
     const resultModal   = new bootstrap.Modal(document.getElementById('resubmitResultModal'));
     const msgBodyModal  = new bootstrap.Modal(document.getElementById('msgBodyModal'));
+
+    // ── Amend Message Status ───────────────────────────────────────────────
+    const amendBtn = document.getElementById('amendStatusBtn');
+    if (amendBtn) {
+        amendBtn.addEventListener('click', function () {
+            const msgId   = this.dataset.msgId;
+            const btn     = this;
+            btn.disabled  = true;
+            btn.innerHTML = '<span class="spinner-border spinner-border-sm me-1"></span>Amending…';
+
+            fetch('/api/amend-status', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ message_identifier: msgId })
+            })
+            .then(r => r.json())
+            .then(data => {
+                if (data.success) {
+                    // Update badge to show 1
+                    const badge = document.getElementById('msgStatusBadge');
+                    badge.className = 'badge status-success';
+                    badge.textContent = '1';
+                    // Remove amend button
+                    btn.remove();
+                    // Enable Resubmit
+                    const resubmitBtn = document.getElementById('resubmitBtn');
+                    if (resubmitBtn) {
+                        resubmitBtn.disabled = false;
+                        resubmitBtn.removeAttribute('title');
+                    }
+                } else {
+                    btn.disabled  = false;
+                    btn.innerHTML = '<i class="bi bi-pencil-square me-1"></i>Amend Status';
+                    alert('Amend failed: ' + (data.error || 'Unknown error'));
+                }
+            })
+            .catch(() => {
+                btn.disabled  = false;
+                btn.innerHTML = '<i class="bi bi-pencil-square me-1"></i>Amend Status';
+                alert('Network error – could not amend status.');
+            });
+        });
+    }
+
+    // ── XML formatter ─────────────────────────────────────────────────────
+    function formatXml(xml) {
+        let formatted = '', indent = '';
+        const tab = '  ';
+        xml.replace(/>\s*</g, '>\n<').split('\n').forEach(function (node) {
+            if (node.match(/^<\/\w/)) indent = indent.slice(tab.length);
+            formatted += indent + node.trim() + '\n';
+            if (node.match(/^<\w[^>]*[^\/]>.*$/) && !node.match(/<.*\/>/)) indent += tab;
+        });
+        return formatted.trim();
+    }
 
     // ── Message Body ───────────────────────────────────────────────────────
     function openMsgBody(btn) {
@@ -428,12 +532,14 @@
     }
 
     // ── Resubmit flow ──────────────────────────────────────────────────────
-    function confirmResubmit(caseNumber, recordId) {
-        _pendingCaseNumber = caseNumber;
-        _pendingRecordId   = recordId;
+    function confirmResubmit(btn) {
+        _pendingCaseNumber = btn.dataset.caseNum;
+        _pendingRecordId   = btn.dataset.recordId;
+        _pendingInvestorId = btn.dataset.investorId  || '';
+        _pendingProcName   = btn.dataset.procName     || '';
 
         document.getElementById('resubmitConfirmText').textContent =
-            `Do you want to resubmit case number: ${caseNumber}?`;
+            `Do you want to resubmit case number: ${_pendingCaseNumber}?`;
         confirmModal.show();
     }
 
@@ -480,9 +586,11 @@
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
-                case_number: _pendingCaseNumber,
-                record_id:   _pendingRecordId,
-                reason:      reason
+                case_number:  _pendingCaseNumber,
+                record_id:    _pendingRecordId,
+                investor_id:  _pendingInvestorId,
+                proc_name:    _pendingProcName,
+                reason:       reason
             })
         })
         .then(r => r.json())
@@ -496,6 +604,12 @@
             const title   = document.getElementById('resultModalTitle');
             const message = document.getElementById('resultModalMessage');
 
+            const details      = document.getElementById('resultModalDetails');
+            const queueEl      = document.getElementById('resultModalQueue');
+            const xmlEl        = document.getElementById('resultModalXml');
+            const responseEl   = document.getElementById('resultModalResponse');
+            const responseSection = document.getElementById('resultResponseSection');
+
             if (data.success) {
                 header.style.backgroundColor  = '#198754';
                 header.style.color            = 'white';
@@ -503,6 +617,15 @@
                 icon.style.color              = '#198754';
                 title.textContent             = 'Resubmit Successful';
                 message.textContent           = data.message;
+                queueEl.textContent = data.queue || '';
+                xmlEl.textContent   = data.message_body ? formatXml(data.message_body) : '';
+                if (data.response_xml) {
+                    responseEl.textContent        = formatXml(data.response_xml);
+                    responseSection.style.display = 'block';
+                } else {
+                    responseSection.style.display = 'none';
+                }
+                details.style.display = 'block';
             } else {
                 header.style.backgroundColor  = '#c60c30';
                 header.style.color            = 'white';
@@ -510,6 +633,10 @@
                 icon.style.color              = '#c60c30';
                 title.textContent             = 'Resubmit Failed';
                 message.textContent           = data.error || 'An unexpected error occurred.';
+                queueEl.textContent           = data.queue || '';
+                xmlEl.textContent             = data.message_body ? formatXml(data.message_body) : '';
+                responseSection.style.display = 'none';
+                details.style.display = (data.queue || data.message_body) ? 'block' : 'none';
             }
             resultModal.show();
         })

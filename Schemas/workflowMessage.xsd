@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	 xmlns="http://www.ajbell.co.uk/schemas/xsd/businessModel/workflow/workflowMessage.xsd"
+	 xmlns:ns0="http://www.ajbell.co.uk/schemas/xsd/businessModel/workflow/workflowAttributes.xsd"
+	 targetNamespace="http://www.ajbell.co.uk/schemas/xsd/businessModel/workflow/workflowMessage.xsd"
+	 elementFormDefault="qualified"
+	 attributeFormDefault="unqualified">
+	<xs:import namespace="http://www.ajbell.co.uk/schemas/xsd/businessModel/workflow/workflowAttributes.xsd" schemaLocation="./workflowAttributes.xsd"/>
+	<xs:element name="workflowMessageRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="ns0:workflowAttributes"/>
+				<xs:element name="Event" type="xs:string" minOccurs="0"/>
+				<xs:element ref="ConfirmationRequested" minOccurs="0"/>
+				<xs:element name="Fields" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Field" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Name" type="xs:string"/>
+										<xs:element name="Value" type="xs:string"/>
+										<xs:element ref="isMemo" minOccurs="0"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="workflowMessageResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="ns0:caseNumber"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ConfirmationRequested" type="xs:boolean"/>
+	<xs:element name="isMemo" type="xs:boolean"/>
+</xs:schema>

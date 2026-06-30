@@ -12,19 +12,19 @@ connections = {
         'uid': os.environ.get('PLATFORM_DB_USERNAME'),
         'pwd': os.environ.get('PLATFORM_DB_PASSWORD'),
     },
-    'TibcoCaseDataDB': {
+    'TibcoDB': {
         'driver': os.environ.get('TIBCO_DB_DRIVER', 'ODBC Driver 17 for SQL Server'),
         'server': os.environ.get('TIBCO_DB_SERVER'),
         'database': os.environ.get('TIBCO_DB_NAME'),
         'uid': os.environ.get('TIBCO_DB_USERNAME'),
         'pwd': os.environ.get('TIBCO_DB_PASSWORD'),
     },
-    'WebSupportDB': {
-        'driver': os.environ.get('WebSupport_DB_DRIVER', 'ODBC Driver 17 for SQL Server'),
-        'server': os.environ.get('WebSupport_DB_SERVER'),
-        'database': os.environ.get('WebSupport_DB_NAME'),
-        'uid': os.environ.get('WebSupport_DB_USERNAME'),
-        'pwd': os.environ.get('WebSupport_DB_PASSWORD'),
+    'WSDMessagesDB': {
+        'driver': os.environ.get('WSD_DB_DRIVER', 'ODBC Driver 17 for SQL Server'),
+        'server': os.environ.get('WSD_DB_SERVER'),
+        'database': os.environ.get('WSD_DB_NAME'),
+        'uid': os.environ.get('WSD_DB_USERNAME'),
+        'pwd': os.environ.get('WSD_DB_PASSWORD'),
     },
 }
 

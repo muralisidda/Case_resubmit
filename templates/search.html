@@ -96,7 +96,7 @@
         {% endif %}
 
         <form method="POST" action="{{ url_for('main.search') }}" id="searchForm">
-            <div class="mb-3">
+            <div class="mb-4">
                 <label for="case_number" class="form-label fw-semibold">Case Number</label>
                 <div class="input-group">
                     <span class="input-group-text" style="background:#fdf8f9;color:#c60c30;">
@@ -110,9 +110,8 @@
                         placeholder="e.g. 123456"
                         value="{{ request.form.get('case_number', '') }}">
                 </div>
+                <div class="form-text">Enter the case number to look up the matching TIBCO message.</div>
             </div>
-
-            <div class="divider-or">AND</div>
 
             <div class="mb-4">
                 <label for="guid" class="form-label fw-semibold">GUID</label>

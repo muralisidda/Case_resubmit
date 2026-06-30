@@ -19,7 +19,10 @@ logger = logging.getLogger(__name__)
 class _BaseDBConnection:
     """Generic SQL Server connection wrapper (pyodbc)."""
 
-    def __init__(self, driver_env, server_env, db_env, user_env, pwd_env, label):
+    def __init__(self, driver_env=None, server_env=None, db_env=None, user_env=None, pwd_env=None, label=None):
+        if getattr(self, '_initialized', False):
+            return
+        self._initialized = True
         self.label = label
         self.connection_available = False
         self._connection_string = None
@@ -117,7 +120,8 @@ class _PlatformDBConnection(_BaseDBConnection):
         return cls._instance
 
 
-class _TibcoDBConnection(_BaseDBConnection):
+class _TibcodomainDBConnection(_BaseDBConnection):
+    """Direct connection to tibcodomain on AG-UK-TIBCO-1\\TIBCO."""
     _instance = None
 
     def __new__(cls):
@@ -126,11 +130,27 @@ class _TibcoDBConnection(_BaseDBConnection):
             cls._instance.__init__(
                 'TIBCO_DB_DRIVER', 'TIBCO_DB_SERVER',
                 'TIBCO_DB_NAME', 'TIBCO_DB_USERNAME',
-                'TIBCO_DB_PASSWORD', 'TibcoCaseDataDB',
+                'TIBCO_DB_PASSWORD', 'TibcoDB',
+            )
+        return cls._instance
+
+
+class _WSDDBConnection(_BaseDBConnection):
+    """Direct connection to WebSupportDatabase on AJB10VSS01\\AJB10VSS01."""
+    _instance = None
+
+    def __new__(cls):
+        if cls._instance is None:
+            cls._instance = super().__new__(cls)
+            cls._instance.__init__(
+                'WSD_DB_DRIVER', 'WSD_DB_SERVER',
+                'WSD_DB_NAME', 'WSD_DB_USERNAME',
+                'WSD_DB_PASSWORD', 'WSDMessagesDB',
             )
         return cls._instance
 
 
 # Public singletons used by services
 platform_db = _PlatformDBConnection()
-tibco_db = _TibcoDBConnection()
+tibcodomain_db = _TibcodomainDBConnection()
+wsd_db = _WSDDBConnection()

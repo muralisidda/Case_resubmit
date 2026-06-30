@@ -211,3 +211,1275 @@
 2026-06-30 13:50:22,816 - root - INFO - Case Resubmit Application started.
 2026-06-30 13:50:22,842 - werkzeug - WARNING -  * Debugger is active!
 2026-06-30 13:50:22,847 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 14:49:49,589 - werkzeug - INFO -  * Detected change in 'C:\\Users\\msidd\\AppData\\Roaming\\Python\\Python310\\site-packages\\colorama\\tests\\__init__.py', reloading
+2026-06-30 14:49:50,836 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 14:49:57,620 - root - INFO - Case Resubmit Application started.
+2026-06-30 14:49:57,673 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 14:49:57,689 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 15:22:58,207 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 15:22:58,384 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 15:23:00,093 - root - INFO - Case Resubmit Application started.
+2026-06-30 15:23:00,130 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 15:23:00,133 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 15:25:17,053 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\database\\connection.py', reloading
+2026-06-30 15:25:17,722 - werkzeug - INFO -  * Detected change in 'C:\\Users\\msidd\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\__init__.py', reloading
+2026-06-30 15:25:17,729 - werkzeug - INFO -  * Detected change in 'C:\\Users\\msidd\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\blueprints.py', reloading
+2026-06-30 15:25:17,761 - werkzeug - INFO -  * Detected change in 'C:\\Users\\msidd\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\scaffold.py', reloading
+2026-06-30 15:25:17,892 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 15:25:19,108 - root - INFO - Case Resubmit Application started.
+2026-06-30 15:25:19,148 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 15:25:19,156 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 15:25:52,150 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 15:25:52,152 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 15:25:52,740 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 15:25:53,998 - root - INFO - Case Resubmit Application started.
+2026-06-30 15:25:54,030 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 15:25:54,048 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 15:26:17,178 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\app\\routes.py', reloading
+2026-06-30 15:26:17,180 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\app\\routes.py', reloading
+2026-06-30 15:26:17,573 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 15:26:23,038 - root - INFO - Case Resubmit Application started.
+2026-06-30 15:26:23,088 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 15:26:23,097 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 15:28:55,289 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 15:28:55,291 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 15:28:55,421 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 15:28:56,789 - root - INFO - Case Resubmit Application started.
+2026-06-30 15:28:56,838 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 15:28:56,848 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 15:30:10,213 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_tibco_query.py', reloading
+2026-06-30 15:30:10,389 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_tibco_query.py', reloading
+2026-06-30 15:30:10,389 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_tibco_query.py', reloading
+2026-06-30 15:30:11,044 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 15:30:12,734 - root - INFO - Case Resubmit Application started.
+2026-06-30 15:30:12,773 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 15:30:12,783 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 15:35:07,066 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_tibco_query.py', reloading
+2026-06-30 15:35:07,066 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_tibco_query.py', reloading
+2026-06-30 15:35:07,107 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 15:35:07,109 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 15:35:07,110 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 15:35:07,626 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 15:35:09,404 - root - INFO - Case Resubmit Application started.
+2026-06-30 15:35:09,454 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 15:35:09,534 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 15:36:46,318 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\database\\connection.py', reloading
+2026-06-30 15:36:46,320 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\database\\connection.py', reloading
+2026-06-30 15:36:47,117 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 15:36:48,814 - root - INFO - Case Resubmit Application started.
+2026-06-30 15:36:48,880 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 15:36:48,900 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 15:37:22,266 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 15:37:22,270 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 15:37:22,663 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 15:37:24,234 - root - INFO - Case Resubmit Application started.
+2026-06-30 15:37:24,276 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 15:37:24,285 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 15:37:31,879 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 15:37:31,882 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 15:37:32,597 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 15:37:34,161 - root - INFO - Case Resubmit Application started.
+2026-06-30 15:37:34,217 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 15:37:34,234 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 15:38:08,467 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_tibco_query.py', reloading
+2026-06-30 15:38:08,467 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_tibco_query.py', reloading
+2026-06-30 15:38:09,197 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 15:38:10,647 - root - INFO - Case Resubmit Application started.
+2026-06-30 15:38:10,693 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 15:38:10,703 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 15:38:47,813 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_tibco_query.py', reloading
+2026-06-30 15:38:47,813 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_tibco_query.py', reloading
+2026-06-30 15:38:47,813 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_tibco_query.py', reloading
+2026-06-30 15:38:48,398 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 15:38:49,891 - root - INFO - Case Resubmit Application started.
+2026-06-30 15:38:49,952 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 15:38:49,964 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 15:39:56,070 - root - INFO - Request: POST http://localhost:5000/search
+2026-06-30 15:39:56,091 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 15:39:56] "[32mPOST /search HTTP/1.1[0m" 302 -
+2026-06-30 15:39:56,246 - root - INFO - Request: GET http://localhost:5000/resubmit-details?case_number=1312321
+2026-06-30 15:39:57,329 - database.connection - WARNING - [PlatformSupportDB] Could not connect to database: ('28000', "[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'sa'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'sa'. (18456)"). Application will use mock data.
+2026-06-30 15:39:57,395 - werkzeug - INFO -  * Detected change in 'C:\\Users\\msidd\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\app.py', reloading
+2026-06-30 15:39:57,543 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 15:39:57] "[35m[1mGET /resubmit-details?case_number=1312321 HTTP/1.1[0m" 500 -
+2026-06-30 15:39:58,715 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 15:39:59,795 - root - INFO - Case Resubmit Application started.
+2026-06-30 15:39:59,834 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 15:39:59,839 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 15:40:00,113 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 15:40:00] "[36mGET /resubmit-details?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-06-30 15:40:36,808 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\database\\connection.py', reloading
+2026-06-30 15:40:36,822 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\database\\connection.py', reloading
+2026-06-30 15:40:37,049 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 15:40:38,700 - root - INFO - Case Resubmit Application started.
+2026-06-30 15:40:38,741 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 15:40:38,750 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 15:41:05,655 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\database\\connection.py', reloading
+2026-06-30 15:41:05,657 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\database\\connection.py', reloading
+2026-06-30 15:41:06,362 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 15:41:07,693 - root - INFO - Case Resubmit Application started.
+2026-06-30 15:41:07,734 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 15:41:07,736 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 15:41:48,942 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_db_connections.py', reloading
+2026-06-30 15:41:49,332 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 15:41:51,303 - root - INFO - Case Resubmit Application started.
+2026-06-30 15:41:51,344 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 15:41:51,350 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 15:42:37,885 - root - INFO - Request: POST http://localhost:5000/search
+2026-06-30 15:42:38,148 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 15:42:38] "[32mPOST /search HTTP/1.1[0m" 302 -
+2026-06-30 15:42:38,308 - root - INFO - Request: GET http://localhost:5000/resubmit-details?case_number=1312321
+2026-06-30 15:42:40,691 - database.connection - WARNING - [PlatformSupportDB] Could not connect to database: ('28000', "[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'sa'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'sa'. (18456)"). Application will use mock data.
+2026-06-30 15:42:40,948 - database.connection - WARNING - [TibcoCaseDataDB] Could not connect to database: ('28000', "[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'sa'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'sa'. (18456)"). Application will use mock data.
+2026-06-30 15:42:45,478 - database.connection - INFO - [TibcodomainRepDB] Database connection established successfully.
+2026-06-30 15:42:50,082 - database.connection - INFO - [WSDMessagesDB] Database connection established successfully.
+2026-06-30 15:42:50,124 - database.connection - INFO - [TibcodomainRepDB] Executing: 
+        SELECT TOP 1
+            cda.field_value  AS InvestorId,
+            cia.started      AS CaseStarted,
+            cia.proc_id      AS ProcId,
+            pi.proc_name     AS ProcName
+        FROM swpro.case_data cda WITH (NOLOCK)
+        INNER JOIN swpro.case_information cia WITH (NOLOCK)
+            ON cia.casenum = cda.casenum
+        INNER JOIN swpro.proc_index pi WITH (NOLOCK)
+            ON pi.proc_id = cia.proc_id
+        WHERE cda.casenum = ?
+          AND cda.field_name = 'IVINVESTORID'
+    
+2026-06-30 15:42:50,136 - database.connection - INFO - [TibcodomainRepDB] Params: ['1312321']
+2026-06-30 15:42:52,660 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 15:42:52] "GET /resubmit-details?case_number=1312321 HTTP/1.1" 200 -
+2026-06-30 15:42:53,100 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 15:42:53,114 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 15:42:53,115 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 15:42:54,480 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 15:42:54] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+2026-06-30 15:42:54,617 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 15:42:54] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 15:42:54,777 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 15:42:54] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2026-06-30 15:43:01,997 - root - INFO - Request: GET http://localhost:5000/search
+2026-06-30 15:43:04,343 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 15:43:04] "GET /search HTTP/1.1" 200 -
+2026-06-30 15:43:04,722 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 15:43:04,728 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 15:43:04,739 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 15:43:04,739 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 15:43:04] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 15:43:04,755 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 15:43:04] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+2026-06-30 15:43:04,770 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 15:43:04] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2026-06-30 15:43:13,969 - root - INFO - Request: POST http://localhost:5000/search
+2026-06-30 15:43:13,971 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 15:43:13] "[32mPOST /search HTTP/1.1[0m" 302 -
+2026-06-30 15:43:14,297 - root - INFO - Request: GET http://localhost:5000/resubmit-details?case_number=34016960
+2026-06-30 15:43:14,299 - database.connection - INFO - [TibcodomainRepDB] Executing: 
+        SELECT TOP 1
+            cda.field_value  AS InvestorId,
+            cia.started      AS CaseStarted,
+            cia.proc_id      AS ProcId,
+            pi.proc_name     AS ProcName
+        FROM swpro.case_data cda WITH (NOLOCK)
+        INNER JOIN swpro.case_information cia WITH (NOLOCK)
+            ON cia.casenum = cda.casenum
+        INNER JOIN swpro.proc_index pi WITH (NOLOCK)
+            ON pi.proc_id = cia.proc_id
+        WHERE cda.casenum = ?
+          AND cda.field_name = 'IVINVESTORID'
+    
+2026-06-30 15:43:14,299 - database.connection - INFO - [TibcodomainRepDB] Params: ['34016960']
+2026-06-30 15:43:15,899 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 15:43:15] "GET /resubmit-details?case_number=34016960 HTTP/1.1" 200 -
+2026-06-30 15:43:15,945 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 15:43:15,949 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 15:43:15] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 15:43:16,263 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 15:43:16,267 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 15:43:16,267 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 15:43:16] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+2026-06-30 15:43:16,276 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 15:43:16] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2026-06-30 15:43:18,613 - root - INFO - Request: GET http://localhost:5000/search
+2026-06-30 15:43:18,613 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 15:43:18] "GET /search HTTP/1.1" 200 -
+2026-06-30 15:43:18,883 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 15:43:18,883 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 15:43:18] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 15:43:18,973 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 15:43:18,978 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 15:43:18,979 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 15:43:18] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+2026-06-30 15:43:18,979 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 15:43:18] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2026-06-30 15:43:21,326 - root - INFO - Request: GET http://localhost:5000/search
+2026-06-30 15:43:21,336 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 15:43:21] "GET /search HTTP/1.1" 200 -
+2026-06-30 15:43:21,682 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 15:43:21,699 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 15:43:21,699 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 15:43:21] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 15:43:21,707 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 15:43:21,715 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 15:43:21] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+2026-06-30 15:43:21,748 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 15:43:21] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2026-06-30 15:43:24,939 - root - INFO - Request: GET http://localhost:5000/search
+2026-06-30 15:43:24,944 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 15:43:24] "GET /search HTTP/1.1" 200 -
+2026-06-30 15:43:25,316 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 15:43:25,346 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 15:43:25,394 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 15:43:25] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 15:43:25,396 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 15:43:25,400 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 15:43:25] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+2026-06-30 15:43:25,447 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 15:43:25] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2026-06-30 15:43:33,729 - root - INFO - Request: POST http://localhost:5000/search
+2026-06-30 15:43:33,731 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 15:43:33] "[32mPOST /search HTTP/1.1[0m" 302 -
+2026-06-30 15:43:34,063 - root - INFO - Request: GET http://localhost:5000/resubmit-details?case_number=34016960
+2026-06-30 15:43:34,063 - database.connection - INFO - [TibcodomainRepDB] Executing: 
+        SELECT TOP 1
+            cda.field_value  AS InvestorId,
+            cia.started      AS CaseStarted,
+            cia.proc_id      AS ProcId,
+            pi.proc_name     AS ProcName
+        FROM swpro.case_data cda WITH (NOLOCK)
+        INNER JOIN swpro.case_information cia WITH (NOLOCK)
+            ON cia.casenum = cda.casenum
+        INNER JOIN swpro.proc_index pi WITH (NOLOCK)
+            ON pi.proc_id = cia.proc_id
+        WHERE cda.casenum = ?
+          AND cda.field_name = 'IVINVESTORID'
+    
+2026-06-30 15:43:34,063 - database.connection - INFO - [TibcodomainRepDB] Params: ['34016960']
+2026-06-30 15:43:35,653 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 15:43:35] "GET /resubmit-details?case_number=34016960 HTTP/1.1" 200 -
+2026-06-30 15:43:35,698 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 15:43:35,726 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 15:43:35] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 15:43:36,055 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 15:43:36,058 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 15:43:36,062 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 15:43:36] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+2026-06-30 15:43:36,070 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 15:43:36] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2026-06-30 15:49:55,726 - werkzeug - INFO -  * Detected change in 'C:\\Users\\msidd\\AppData\\Roaming\\Python\\Python310\\site-packages\\colorama\\tests\\__init__.py', reloading
+2026-06-30 15:49:56,821 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 15:49:58,199 - root - INFO - Case Resubmit Application started.
+2026-06-30 15:49:58,241 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 15:49:58,251 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 15:49:59,297 - root - INFO - Request: GET http://localhost:5000/search
+2026-06-30 15:49:59,540 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 15:49:59] "GET /search HTTP/1.1" 200 -
+2026-06-30 15:49:59,603 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 15:49:59,831 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 15:49:59] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 15:49:59,911 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 15:49:59,916 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 15:49:59,916 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 15:49:59] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+2026-06-30 15:50:00,194 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 15:50:00] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2026-06-30 15:51:01,606 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\app\\routes.py', reloading
+2026-06-30 15:51:01,609 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\app\\routes.py', reloading
+2026-06-30 15:51:02,482 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 15:51:04,512 - root - INFO - Case Resubmit Application started.
+2026-06-30 15:51:04,599 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 15:51:04,619 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 16:00:30,852 - root - INFO - Request: GET http://localhost:5000/search
+2026-06-30 16:00:31,022 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:00:31] "GET /search HTTP/1.1" 200 -
+2026-06-30 16:00:31,067 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 16:00:31,375 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 16:00:31,394 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 16:00:31,470 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:00:31] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 16:00:33,954 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:00:33] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+2026-06-30 16:00:34,125 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:00:34] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2026-06-30 16:00:34,510 - root - INFO - Request: GET http://localhost:5000/static/img/Sybmol.png
+2026-06-30 16:00:34,515 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:00:34] "[36mGET /static/img/Sybmol.png HTTP/1.1[0m" 304 -
+2026-06-30 16:01:56,481 - root - INFO - Request: POST http://localhost:5000/search
+2026-06-30 16:01:56,489 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:01:56] "[32mPOST /search HTTP/1.1[0m" 302 -
+2026-06-30 16:01:56,782 - root - INFO - Request: GET http://localhost:5000/resubmit-details?case_number=321314&guid=
+2026-06-30 16:01:59,920 - database.connection - WARNING - [PlatformSupportDB] Could not connect to database: ('28000', "[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'sa'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'sa'. (18456)"). Application will use mock data.
+2026-06-30 16:02:03,203 - database.connection - WARNING - [TibcoCaseDataDB] Could not connect to database: ('28000', "[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'sa'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'sa'. (18456)"). Application will use mock data.
+2026-06-30 16:02:16,059 - database.connection - WARNING - [TibcodomainRepDB] Could not connect to database: ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]SQL Server Network Interfaces: Error Locating Server/Instance Specified [xFFFFFFFF].  (-1) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (-1)'). Application will use mock data.
+2026-06-30 16:02:27,195 - database.connection - WARNING - [WSDMessagesDB] Could not connect to database: ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]SQL Server Network Interfaces: Error Locating Server/Instance Specified [xFFFFFFFF].  (-1) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (-1)'). Application will use mock data.
+2026-06-30 16:02:27,195 - services.resubmit_service - WARNING - tibcodomain_rep DB unavailable – returning mock data for case lookup.
+2026-06-30 16:02:27,343 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:02:27] "GET /resubmit-details?case_number=321314&guid= HTTP/1.1" 200 -
+2026-06-30 16:02:27,427 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 16:02:27,437 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:02:27] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 16:02:27,764 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 16:02:27,764 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 16:02:27,764 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:02:27] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+2026-06-30 16:02:27,776 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:02:27] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2026-06-30 16:03:06,223 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\app\\routes.py', reloading
+2026-06-30 16:03:06,223 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\app\\routes.py', reloading
+2026-06-30 16:03:06,223 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\app\\routes.py', reloading
+2026-06-30 16:03:06,675 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 16:03:07,537 - root - INFO - Case Resubmit Application started.
+2026-06-30 16:03:07,558 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 16:03:07,573 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 16:03:42,928 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 16:03:42,930 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 16:03:43,315 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 16:03:43,922 - root - INFO - Case Resubmit Application started.
+2026-06-30 16:03:43,963 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 16:03:43,969 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 16:03:53,950 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\app\\routes.py', reloading
+2026-06-30 16:03:53,952 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\app\\routes.py', reloading
+2026-06-30 16:03:53,952 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\app\\routes.py', reloading
+2026-06-30 16:03:54,278 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 16:03:54,927 - root - INFO - Case Resubmit Application started.
+2026-06-30 16:03:54,953 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 16:03:54,959 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 16:04:02,494 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_tibco_query.py', reloading
+2026-06-30 16:04:02,496 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_tibco_query.py', reloading
+2026-06-30 16:04:03,184 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 16:04:03,841 - root - INFO - Case Resubmit Application started.
+2026-06-30 16:04:03,858 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 16:04:03,870 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 16:04:04,627 - root - INFO - Request: POST http://localhost:5000/api/resubmit
+2026-06-30 16:04:04,741 - database.connection - WARNING - [PlatformSupportDB] Could not connect to database: ('28000', "[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'sa'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'sa'. (18456)"). Application will use mock data.
+2026-06-30 16:04:04,817 - database.connection - WARNING - [TibcoCaseDataDB] Could not connect to database: ('28000', "[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'sa'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'sa'. (18456)"). Application will use mock data.
+2026-06-30 16:04:07,707 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_tibco_query.py', reloading
+2026-06-30 16:04:07,710 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_tibco_query.py', reloading
+2026-06-30 16:04:07,710 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_tibco_query.py', reloading
+2026-06-30 16:04:08,013 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 16:04:08,603 - root - INFO - Case Resubmit Application started.
+2026-06-30 16:04:08,620 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 16:04:08,620 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 16:04:14,776 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_tibco_query.py', reloading
+2026-06-30 16:04:14,778 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_tibco_query.py', reloading
+2026-06-30 16:04:14,930 - root - INFO - Request: GET http://localhost:5000/search
+2026-06-30 16:04:15,085 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:04:15] "GET /search HTTP/1.1" 200 -
+2026-06-30 16:04:15,182 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 16:04:15,444 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 16:04:15,459 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 16:04:15,737 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:04:15] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 16:04:15,824 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 16:04:16,240 - root - INFO - Case Resubmit Application started.
+2026-06-30 16:04:16,255 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 16:04:16,263 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 16:04:51,064 - root - INFO - Request: POST http://localhost:5000/search
+2026-06-30 16:04:51,070 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:04:51] "[32mPOST /search HTTP/1.1[0m" 302 -
+2026-06-30 16:04:51,312 - root - INFO - Request: GET http://localhost:5000/resubmit-details?case_number=34016960&guid=524f19d6-e343-4562-a684-723d96b651a6
+2026-06-30 16:04:51,591 - database.connection - WARNING - [PlatformSupportDB] Could not connect to database: ('28000', "[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'sa'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'sa'. (18456)"). Application will use mock data.
+2026-06-30 16:04:51,667 - database.connection - WARNING - [TibcoCaseDataDB] Could not connect to database: ('28000', "[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'sa'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'sa'. (18456)"). Application will use mock data.
+2026-06-30 16:05:03,932 - database.connection - WARNING - [TibcodomainRepDB] Could not connect to database: ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]SQL Server Network Interfaces: Error Locating Server/Instance Specified [xFFFFFFFF].  (-1) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (-1)'). Application will use mock data.
+2026-06-30 16:05:15,087 - database.connection - WARNING - [WSDMessagesDB] Could not connect to database: ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]SQL Server Network Interfaces: Error Locating Server/Instance Specified [xFFFFFFFF].  (-1) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (-1)'). Application will use mock data.
+2026-06-30 16:05:15,088 - services.resubmit_service - WARNING - tibcodomain_rep DB unavailable – returning mock data for case lookup.
+2026-06-30 16:05:15,157 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:05:15] "GET /resubmit-details?case_number=34016960&guid=524f19d6-e343-4562-a684-723d96b651a6 HTTP/1.1" 200 -
+2026-06-30 16:05:15,244 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 16:05:15,557 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 16:05:15,560 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 16:05:15,883 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:05:15] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 16:05:16,309 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:05:16] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+2026-06-30 16:05:16,320 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:05:16] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2026-06-30 16:06:35,584 - root - INFO - Request: POST http://localhost:5000/api/resubmit
+2026-06-30 16:06:35,585 - services.resubmit_service - INFO - Resubmit requested: case=34016960, record=524f19d6-e343-4562-a684-723d96b651a6, by=admin, reason=absnksd
+2026-06-30 16:06:35,585 - services.resubmit_service - INFO - Demo mode: resubmit simulated (no DB connection).
+2026-06-30 16:06:35,587 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:06:35] "POST /api/resubmit HTTP/1.1" 200 -
+2026-06-30 16:06:49,341 - root - INFO - Request: GET http://localhost:5000/search
+2026-06-30 16:06:49,354 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:06:49] "GET /search HTTP/1.1" 200 -
+2026-06-30 16:06:49,709 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 16:06:49,713 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 16:06:49,715 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 16:06:49,718 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:06:49] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 16:06:49,719 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:06:49] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+2026-06-30 16:06:49,721 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:06:49] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2026-06-30 16:07:06,074 - root - INFO - Request: POST http://localhost:5000/search
+2026-06-30 16:07:06,077 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:07:06] "[32mPOST /search HTTP/1.1[0m" 302 -
+2026-06-30 16:07:06,407 - root - INFO - Request: GET http://localhost:5000/resubmit-details?case_number=34343&guid=fsdfdgdg
+2026-06-30 16:07:06,408 - services.resubmit_service - WARNING - tibcodomain_rep DB unavailable – returning mock data for case lookup.
+2026-06-30 16:07:06,411 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:07:06] "GET /resubmit-details?case_number=34343&guid=fsdfdgdg HTTP/1.1" 200 -
+2026-06-30 16:07:06,652 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 16:07:06,657 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:07:06] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 16:07:06,760 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 16:07:06,765 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:07:06] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+2026-06-30 16:07:06,775 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 16:07:06,782 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:07:06] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2026-06-30 16:07:31,953 - root - INFO - Request: GET http://localhost:5000/search
+2026-06-30 16:07:31,957 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:07:31] "GET /search HTTP/1.1" 200 -
+2026-06-30 16:07:32,313 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 16:07:32,315 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 16:07:32,319 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 16:07:32,324 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:07:32] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+2026-06-30 16:07:32,324 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:07:32] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 16:07:32,327 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:07:32] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2026-06-30 16:16:14,038 - root - INFO - Request: POST http://localhost:5000/search
+2026-06-30 16:16:14,038 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:16:14] "[32mPOST /search HTTP/1.1[0m" 302 -
+2026-06-30 16:16:14,307 - root - INFO - Request: GET http://localhost:5000/resubmit-details?case_number=3435&guid=fdfdgdfg
+2026-06-30 16:16:14,308 - services.resubmit_service - WARNING - tibcodomain_rep DB unavailable – returning mock data for case lookup.
+2026-06-30 16:16:14,312 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:16:14] "GET /resubmit-details?case_number=3435&guid=fdfdgdfg HTTP/1.1" 200 -
+2026-06-30 16:16:14,364 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 16:16:14,412 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:16:14] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 16:16:14,654 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 16:16:14,654 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 16:16:14,664 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:16:14] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+2026-06-30 16:16:14,703 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:16:14] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2026-06-30 16:18:23,729 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_db_connections.py', reloading
+2026-06-30 16:18:23,731 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_db_connections.py', reloading
+2026-06-30 16:18:24,619 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 16:18:25,885 - root - INFO - Case Resubmit Application started.
+2026-06-30 16:18:25,899 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 16:18:25,902 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 16:29:59,856 - root - INFO - Request: GET http://localhost:5000/search
+2026-06-30 16:30:00,127 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:30:00] "GET /search HTTP/1.1" 200 -
+2026-06-30 16:30:00,160 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 16:30:00,471 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 16:30:00,471 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 16:30:00,502 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:30:00] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 16:30:00,535 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:30:00] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2026-06-30 16:30:01,091 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:30:01] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+2026-06-30 16:30:04,891 - root - INFO - Request: POST http://localhost:5000/search
+2026-06-30 16:30:04,891 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:30:04] "[32mPOST /search HTTP/1.1[0m" 302 -
+2026-06-30 16:30:05,156 - root - INFO - Request: GET http://localhost:5000/resubmit-details?case_number=32234234&guid=efefdgdfg
+2026-06-30 16:30:05,479 - database.connection - WARNING - [PlatformSupportDB] Could not connect to database: ('28000', "[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'sa'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'sa'. (18456)"). Application will use mock data.
+2026-06-30 16:30:05,521 - database.connection - WARNING - [TibcoCaseDataDB] Could not connect to database: ('28000', "[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'sa'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'sa'. (18456)"). Application will use mock data.
+2026-06-30 16:30:09,124 - database.connection - INFO - [TibcodomainRepDB] Database connection established successfully.
+2026-06-30 16:30:12,656 - database.connection - INFO - [WSDMessagesDB] Database connection established successfully.
+2026-06-30 16:30:12,658 - database.connection - INFO - [TibcodomainRepDB] Executing: 
+        SELECT TOP 1
+            cda.field_value  AS InvestorId,
+            cia.started      AS CaseStarted,
+            cia.proc_id      AS ProcId,
+            pi.proc_name     AS ProcName
+        FROM swpro.case_data cda WITH (NOLOCK)
+        INNER JOIN swpro.case_information cia WITH (NOLOCK)
+            ON cia.casenum = cda.casenum
+        INNER JOIN swpro.proc_index pi WITH (NOLOCK)
+            ON pi.proc_id = cia.proc_id
+        WHERE cda.casenum = ?
+          AND cda.field_name = 'IVINVESTORID'
+    
+2026-06-30 16:30:12,661 - database.connection - INFO - [TibcodomainRepDB] Params: ['32234234']
+2026-06-30 16:30:14,038 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:30:14] "GET /resubmit-details?case_number=32234234&guid=efefdgdfg HTTP/1.1" 200 -
+2026-06-30 16:30:14,075 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 16:30:14,075 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:30:14] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 16:30:14,390 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 16:30:14,390 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 16:30:14,390 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:30:14] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+2026-06-30 16:30:14,390 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:30:14] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2026-06-30 16:30:20,331 - root - INFO - Request: GET http://localhost:5000/search
+2026-06-30 16:30:20,335 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:30:20] "GET /search HTTP/1.1" 200 -
+2026-06-30 16:30:20,608 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 16:30:20,612 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:30:20] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 16:30:20,676 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 16:30:20,680 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 16:30:20,683 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:30:20] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+2026-06-30 16:30:20,687 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:30:20] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2026-06-30 16:30:33,134 - root - INFO - Request: POST http://localhost:5000/search
+2026-06-30 16:30:33,136 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:30:33] "[32mPOST /search HTTP/1.1[0m" 302 -
+2026-06-30 16:30:33,457 - root - INFO - Request: GET http://localhost:5000/resubmit-details?case_number=34016960&guid=524f19d6-e343-4562-a684-723d96b651a6
+2026-06-30 16:30:33,457 - database.connection - INFO - [TibcodomainRepDB] Executing: 
+        SELECT TOP 1
+            cda.field_value  AS InvestorId,
+            cia.started      AS CaseStarted,
+            cia.proc_id      AS ProcId,
+            pi.proc_name     AS ProcName
+        FROM swpro.case_data cda WITH (NOLOCK)
+        INNER JOIN swpro.case_information cia WITH (NOLOCK)
+            ON cia.casenum = cda.casenum
+        INNER JOIN swpro.proc_index pi WITH (NOLOCK)
+            ON pi.proc_id = cia.proc_id
+        WHERE cda.casenum = ?
+          AND cda.field_name = 'IVINVESTORID'
+    
+2026-06-30 16:30:33,457 - database.connection - INFO - [TibcodomainRepDB] Params: ['34016960']
+2026-06-30 16:30:34,790 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:30:34] "GET /resubmit-details?case_number=34016960&guid=524f19d6-e343-4562-a684-723d96b651a6 HTTP/1.1" 200 -
+2026-06-30 16:30:34,823 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 16:30:34,827 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:30:34] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 16:30:35,139 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 16:30:35,141 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 16:30:35,145 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:30:35] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+2026-06-30 16:30:35,145 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:30:35] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2026-06-30 16:34:15,702 - root - INFO - Request: GET http://localhost:5000/search
+2026-06-30 16:34:15,706 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:34:15] "GET /search HTTP/1.1" 200 -
+2026-06-30 16:34:15,956 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 16:34:15,999 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:34:15] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 16:34:16,055 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 16:34:16,057 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 16:34:16,062 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:34:16] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+2026-06-30 16:34:16,140 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:34:16] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2026-06-30 16:34:20,468 - root - INFO - Request: POST http://localhost:5000/search
+2026-06-30 16:34:20,468 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:34:20] "[32mPOST /search HTTP/1.1[0m" 302 -
+2026-06-30 16:34:20,782 - root - INFO - Request: GET http://localhost:5000/resubmit-details?case_number=34016960&guid=524f19d6-e343-4562-a684-723d96b651a6
+2026-06-30 16:34:20,783 - database.connection - INFO - [TibcodomainRepDB] Executing: 
+        SELECT TOP 1
+            cda.field_value  AS InvestorId,
+            cia.started      AS CaseStarted,
+            cia.proc_id      AS ProcId,
+            pi.proc_name     AS ProcName
+        FROM swpro.case_data cda WITH (NOLOCK)
+        INNER JOIN swpro.case_information cia WITH (NOLOCK)
+            ON cia.casenum = cda.casenum
+        INNER JOIN swpro.proc_index pi WITH (NOLOCK)
+            ON pi.proc_id = cia.proc_id
+        WHERE cda.casenum = ?
+          AND cda.field_name = 'IVINVESTORID'
+    
+2026-06-30 16:34:20,783 - database.connection - INFO - [TibcodomainRepDB] Params: ['34016960']
+2026-06-30 16:34:23,809 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:34:23] "GET /resubmit-details?case_number=34016960&guid=524f19d6-e343-4562-a684-723d96b651a6 HTTP/1.1" 200 -
+2026-06-30 16:34:23,856 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 16:34:23,861 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:34:23] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 16:34:24,167 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 16:34:24,167 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 16:34:24,167 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:34:24] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+2026-06-30 16:34:24,184 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:34:24] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2026-06-30 16:34:28,797 - root - INFO - Request: GET http://localhost:5000/search
+2026-06-30 16:34:28,801 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:34:28] "GET /search HTTP/1.1" 200 -
+2026-06-30 16:34:29,065 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 16:34:29,069 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:34:29] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 16:34:29,149 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 16:34:29,153 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 16:34:29,157 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:34:29] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+2026-06-30 16:34:29,161 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:34:29] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2026-06-30 16:46:23,125 - werkzeug - INFO -  * Detected change in 'C:\\Users\\msidd\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\os.py', reloading
+2026-06-30 16:46:24,042 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 16:46:24,661 - root - INFO - Case Resubmit Application started.
+2026-06-30 16:46:24,677 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 16:46:24,680 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 16:47:00,016 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\database\\connection.py', reloading
+2026-06-30 16:47:00,225 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 16:47:00,745 - root - INFO - Case Resubmit Application started.
+2026-06-30 16:47:00,760 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 16:47:00,768 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 16:47:24,058 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_db_connections.py', reloading
+2026-06-30 16:47:24,058 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 16:47:24,058 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_db_connections.py', reloading
+2026-06-30 16:47:24,058 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 16:47:24,072 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\database\\connection.py', reloading
+2026-06-30 16:47:24,072 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\database\\connection.py', reloading
+2026-06-30 16:47:24,072 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\database\\connection.py', reloading
+2026-06-30 16:47:24,175 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 16:47:24,750 - root - INFO - Case Resubmit Application started.
+2026-06-30 16:47:24,767 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 16:47:24,771 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 16:47:39,292 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 16:47:39,294 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 16:47:39,294 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 16:47:40,036 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 16:47:40,597 - root - INFO - Case Resubmit Application started.
+2026-06-30 16:47:40,611 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 16:47:40,613 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 16:48:08,630 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\app\\__init__.py', reloading
+2026-06-30 16:48:08,724 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\setup.py', reloading
+2026-06-30 16:48:09,084 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 16:48:09,601 - root - INFO - Case Resubmit Application started.
+2026-06-30 16:48:09,615 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 16:48:09,619 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 16:50:10,558 - werkzeug - INFO -  * Detected change in 'C:\\Users\\msidd\\AppData\\Roaming\\Python\\Python310\\site-packages\\colorama\\tests\\__init__.py', reloading
+2026-06-30 16:50:11,059 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 16:50:11,692 - root - INFO - Case Resubmit Application started.
+2026-06-30 16:50:11,709 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 16:50:11,719 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 16:52:37,581 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_diagnose.py', reloading
+2026-06-30 16:52:37,721 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_diagnose.py', reloading
+2026-06-30 16:52:37,723 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_diagnose.py', reloading
+2026-06-30 16:52:37,725 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_diagnose.py', reloading
+2026-06-30 16:52:37,950 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 16:52:38,978 - root - INFO - Case Resubmit Application started.
+2026-06-30 16:52:38,992 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 16:52:39,001 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 16:53:44,679 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_db_connections.py', reloading
+2026-06-30 16:53:44,680 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 16:53:44,681 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\app\\routes.py', reloading
+2026-06-30 16:53:44,682 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_tibco_query.py', reloading
+2026-06-30 16:53:44,683 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\database\\connection.py', reloading
+2026-06-30 16:53:44,684 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_diagnose.py', reloading
+2026-06-30 16:53:44,685 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\database\\connection.py', reloading
+2026-06-30 16:53:44,685 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 16:53:44,685 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_db_connections.py', reloading
+2026-06-30 16:53:44,687 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\app\\routes.py', reloading
+2026-06-30 16:53:44,688 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_tibco_query.py', reloading
+2026-06-30 16:53:44,688 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\database\\connection.py', reloading
+2026-06-30 16:53:44,689 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_diagnose.py', reloading
+2026-06-30 16:53:44,973 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 16:53:46,221 - root - INFO - Case Resubmit Application started.
+2026-06-30 16:53:46,231 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 16:53:46,248 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 16:54:09,329 - werkzeug - INFO -  * Detected change in 'C:\\Users\\msidd\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\pip\\_vendor\\pyparsing\\core.py', reloading
+2026-06-30 16:54:09,413 - werkzeug - INFO -  * Detected change in 'C:\\Users\\msidd\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\pip\\_vendor\\packaging\\markers.py', reloading
+2026-06-30 16:54:09,569 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 16:54:10,062 - root - INFO - Case Resubmit Application started.
+2026-06-30 16:54:10,075 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 16:54:10,075 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 16:59:14,797 - root - INFO - Request: POST http://localhost:5000/search
+2026-06-30 16:59:14,860 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:59:14] "POST /search HTTP/1.1" 200 -
+2026-06-30 16:59:15,044 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 16:59:15,212 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 16:59:15,212 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 16:59:15,468 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:59:15] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 16:59:15,625 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:59:15] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+2026-06-30 16:59:15,642 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 16:59:15] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2026-06-30 17:03:49,547 - root - INFO - Request: POST http://localhost:5000/search
+2026-06-30 17:03:49,548 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 17:03:49] "[32mPOST /search HTTP/1.1[0m" 302 -
+2026-06-30 17:03:49,814 - root - INFO - Request: GET http://localhost:5000/resubmit-details?case_number=34010023&guid=d5d858fe-55b6-4e16-a4f2-f06b54187e8a
+2026-06-30 17:03:50,219 - database.connection - WARNING - [PlatformSupportDB] Could not connect to database: ('28000', "[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'sa'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'sa'. (18456)"). Application will use mock data.
+2026-06-30 17:03:53,975 - database.connection - INFO - [TibcodomainRepDB] Database connection established successfully.
+2026-06-30 17:03:58,714 - database.connection - INFO - [WSDMessagesDB] Database connection established successfully.
+2026-06-30 17:03:58,715 - database.connection - INFO - [TibcodomainRepDB] Executing: 
+        SELECT TOP 1
+            cda.field_value  AS InvestorId,
+            cia.started      AS CaseStarted,
+            cia.proc_id      AS ProcId,
+            pi.proc_name     AS ProcName
+        FROM swpro.case_data cda WITH (NOLOCK)
+        INNER JOIN swpro.case_information cia WITH (NOLOCK)
+            ON cia.casenum = cda.casenum
+        INNER JOIN swpro.proc_index pi WITH (NOLOCK)
+            ON pi.proc_id = cia.proc_id
+        WHERE cda.casenum = ?
+          AND cda.field_name = 'IVINVESTORID'
+    
+2026-06-30 17:03:58,716 - database.connection - INFO - [TibcodomainRepDB] Params: ['34010023']
+2026-06-30 17:04:00,207 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 17:04:00] "GET /resubmit-details?case_number=34010023&guid=d5d858fe-55b6-4e16-a4f2-f06b54187e8a HTTP/1.1" 200 -
+2026-06-30 17:04:00,255 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 17:04:00,299 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 17:04:00] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 17:04:00,566 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 17:04:00,569 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 17:04:00,573 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 17:04:00] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+2026-06-30 17:04:00,653 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 17:04:00] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2026-06-30 17:04:07,999 - root - INFO - Request: GET http://localhost:5000/search
+2026-06-30 17:04:08,002 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 17:04:08] "GET /search HTTP/1.1" 200 -
+2026-06-30 17:04:08,261 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 17:04:08,264 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 17:04:08] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 17:04:08,353 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 17:04:08,356 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 17:04:08,359 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 17:04:08] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+2026-06-30 17:04:08,362 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 17:04:08] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2026-06-30 17:04:15,836 - root - INFO - Request: POST http://localhost:5000/search
+2026-06-30 17:04:15,841 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 17:04:15] "POST /search HTTP/1.1" 200 -
+2026-06-30 17:04:16,197 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 17:04:16,200 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 17:04:16,202 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 17:04:16,203 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 17:04:16] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 17:04:16,205 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 17:04:16] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+2026-06-30 17:04:16,206 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 17:04:16] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2026-06-30 17:12:43,657 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_db_connections.py', reloading
+2026-06-30 17:12:43,657 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_db_connections.py', reloading
+2026-06-30 17:12:43,664 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_db_connections.py', reloading
+2026-06-30 17:12:43,672 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\database\\connection.py', reloading
+2026-06-30 17:12:43,674 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\database\\connection.py', reloading
+2026-06-30 17:12:43,674 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\database\\connection.py', reloading
+2026-06-30 17:12:44,003 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 17:12:44,808 - root - INFO - Case Resubmit Application started.
+2026-06-30 17:12:44,813 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 17:12:44,830 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 17:14:37,276 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_db_connections.py', reloading
+2026-06-30 17:14:37,276 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_db_connections.py', reloading
+2026-06-30 17:14:37,277 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_db_connections.py', reloading
+2026-06-30 17:14:37,295 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\database\\connection.py', reloading
+2026-06-30 17:14:37,297 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\database\\connection.py', reloading
+2026-06-30 17:14:37,534 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 17:14:38,218 - root - INFO - Case Resubmit Application started.
+2026-06-30 17:14:38,235 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 17:14:38,249 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 17:15:09,562 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 17:15:09,563 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 17:15:09,563 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 17:15:09,671 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 17:15:10,269 - root - INFO - Case Resubmit Application started.
+2026-06-30 17:15:10,288 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 17:15:10,291 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 17:16:51,054 - root - INFO - Request: POST http://localhost:5000/search
+2026-06-30 17:16:51,086 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 17:16:51] "[32mPOST /search HTTP/1.1[0m" 302 -
+2026-06-30 17:16:51,305 - root - INFO - Request: GET http://localhost:5000/resubmit-details?case_number=34010023&guid=d5d858fe-55b6-4e16-a4f2-f06b54187e8a
+2026-06-30 17:16:51,604 - database.connection - WARNING - [PlatformSupportDB] Could not connect to database: ('28000', "[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'sa'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'sa'. (18456)"). Application will use mock data.
+2026-06-30 17:16:51,675 - database.connection - WARNING - [TibcoDB] Could not connect to database: ('28000', "[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'sa'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'sa'. (18456)"). Application will use mock data.
+2026-06-30 17:16:55,321 - database.connection - INFO - [WSDMessagesDB] Database connection established successfully.
+2026-06-30 17:16:55,335 - services.resubmit_service - WARNING - tibcodomain DB unavailable – returning mock data for case lookup.
+2026-06-30 17:16:55,568 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 17:16:55] "GET /resubmit-details?case_number=34010023&guid=d5d858fe-55b6-4e16-a4f2-f06b54187e8a HTTP/1.1" 200 -
+2026-06-30 17:16:55,615 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 17:16:55,918 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 17:16:55,918 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 17:16:56,034 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 17:16:56] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 17:16:56,252 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 17:16:56] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+2026-06-30 17:16:56,317 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 17:16:56] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2026-06-30 17:17:39,593 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 17:17:39,594 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 17:17:39,594 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 17:17:40,435 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 17:17:41,018 - root - INFO - Case Resubmit Application started.
+2026-06-30 17:17:41,037 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 17:17:41,039 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 17:18:03,631 - root - INFO - Case Resubmit Application started.
+2026-06-30 17:18:05,070 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.44.96.234:5000
+2026-06-30 17:18:05,070 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-30 17:18:05,105 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 17:18:05,647 - root - INFO - Case Resubmit Application started.
+2026-06-30 17:18:05,664 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 17:18:05,667 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 17:18:51,182 - root - INFO - Request: GET http://localhost:5000/resubmit-details?case_number=34010023&guid=d5d858fe-55b6-4e16-a4f2-f06b54187e8a
+2026-06-30 17:18:52,530 - root - INFO - Request: GET http://localhost:5000/static/img/Sybmol.png
+2026-06-30 17:18:53,023 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 17:18:53] "[36mGET /static/img/Sybmol.png HTTP/1.1[0m" 304 -
+2026-06-30 17:18:54,973 - database.connection - INFO - [PlatformSupportDB] Database connection established successfully.
+2026-06-30 17:18:56,040 - root - INFO - Request: POST http://localhost:5000/search
+2026-06-30 17:18:56,177 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 17:18:56] "POST /search HTTP/1.1" 200 -
+2026-06-30 17:18:56,290 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 17:18:56,294 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 17:18:56] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 17:18:56,518 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 17:18:56,520 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 17:18:56,523 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 17:18:56] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+2026-06-30 17:18:56,527 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 17:18:56] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2026-06-30 17:18:56,539 - root - INFO - Request: GET http://localhost:5000/static/img/Sybmol.png
+2026-06-30 17:18:56,539 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 17:18:56] "[36mGET /static/img/Sybmol.png HTTP/1.1[0m" 304 -
+2026-06-30 17:18:58,605 - database.connection - INFO - [TibcoDB] Database connection established successfully.
+2026-06-30 17:19:02,385 - database.connection - INFO - [WSDMessagesDB] Database connection established successfully.
+2026-06-30 17:19:02,385 - database.connection - INFO - [TibcoDB] Executing: 
+        SELECT TOP 1
+            cda.field_value  AS InvestorId,
+            cia.started      AS CaseStarted,
+            cia.proc_id      AS ProcId,
+            pi.proc_name     AS ProcName
+        FROM swpro.case_data cda WITH (NOLOCK)
+        INNER JOIN swpro.case_information cia WITH (NOLOCK)
+            ON cia.casenum = cda.casenum
+        INNER JOIN swpro.proc_index pi WITH (NOLOCK)
+            ON pi.proc_id = cia.proc_id
+        WHERE cda.casenum = ?
+          AND cda.field_name = 'IVINVESTORID'
+    
+2026-06-30 17:19:02,397 - database.connection - INFO - [TibcoDB] Params: ['34010023']
+2026-06-30 17:19:03,622 - root - INFO - Request: POST http://localhost:5000/search
+2026-06-30 17:19:03,624 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 17:19:03] "[32mPOST /search HTTP/1.1[0m" 302 -
+2026-06-30 17:19:03,782 - database.connection - INFO - [WSDMessagesDB] Executing: 
+            SELECT TOP 1
+                ? AS CaseNum,
+                ? AS InvestorId,
+                ? AS ProcId,
+                ? AS ProcName,
+                ? AS CaseStarted,
+                MessageIdentifier,
+                CreateDateTime,
+                ABS(DATEDIFF(SECOND, CreateDateTime, ?)) AS DiffSeconds
+            FROM dbo.wsd_messages WITH (NOLOCK)
+            WHERE ClientIdentifier = ?
+              AND MessageIdentifier = ?
+            ORDER BY DiffSeconds
+        
+2026-06-30 17:19:03,783 - database.connection - INFO - [WSDMessagesDB] Params: ['34010023', '1452082', 36, 'NBM041NB', '2026-06-24 11:24:16.000', '2026-06-24 11:24:16.000', '1452082', 'd5d858fe-55b6-4e16-a4f2-f06b54187e8a']
+2026-06-30 17:19:03,875 - root - INFO - Request: GET http://localhost:5000/resubmit-details?case_number=34010023&guid=d5d858fe-55b6-4e16-a4f2-f06b54187e8a
+2026-06-30 17:19:03,875 - database.connection - INFO - [TibcoDB] Executing: 
+        SELECT TOP 1
+            cda.field_value  AS InvestorId,
+            cia.started      AS CaseStarted,
+            cia.proc_id      AS ProcId,
+            pi.proc_name     AS ProcName
+        FROM swpro.case_data cda WITH (NOLOCK)
+        INNER JOIN swpro.case_information cia WITH (NOLOCK)
+            ON cia.casenum = cda.casenum
+        INNER JOIN swpro.proc_index pi WITH (NOLOCK)
+            ON pi.proc_id = cia.proc_id
+        WHERE cda.casenum = ?
+          AND cda.field_name = 'IVINVESTORID'
+    
+2026-06-30 17:19:03,875 - database.connection - INFO - [TibcoDB] Params: ['34010023']
+2026-06-30 17:19:05,188 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 17:19:05] "GET /resubmit-details?case_number=34010023&guid=d5d858fe-55b6-4e16-a4f2-f06b54187e8a HTTP/1.1" 200 -
+2026-06-30 17:19:06,669 - database.connection - INFO - [WSDMessagesDB] Executing: 
+            SELECT TOP 1
+                ? AS CaseNum,
+                ? AS InvestorId,
+                ? AS ProcId,
+                ? AS ProcName,
+                ? AS CaseStarted,
+                MessageIdentifier,
+                CreateDateTime,
+                ABS(DATEDIFF(SECOND, CreateDateTime, ?)) AS DiffSeconds
+            FROM dbo.wsd_messages WITH (NOLOCK)
+            WHERE ClientIdentifier = ?
+              AND MessageIdentifier = ?
+            ORDER BY DiffSeconds
+        
+2026-06-30 17:19:06,670 - database.connection - INFO - [WSDMessagesDB] Params: ['34010023', '1452082', 36, 'NBM041NB', '2026-06-24 11:24:16.000', '2026-06-24 11:24:16.000', '1452082', 'd5d858fe-55b6-4e16-a4f2-f06b54187e8a']
+2026-06-30 17:19:08,046 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 17:19:08] "GET /resubmit-details?case_number=34010023&guid=d5d858fe-55b6-4e16-a4f2-f06b54187e8a HTTP/1.1" 200 -
+2026-06-30 17:19:08,084 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 17:19:08,090 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 17:19:08] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 17:19:08,391 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 17:19:08,394 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 17:19:08,397 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 17:19:08] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+2026-06-30 17:19:08,403 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 17:19:08] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2026-06-30 17:19:18,657 - root - INFO - Request: POST http://localhost:5000/api/resubmit
+2026-06-30 17:19:18,658 - services.resubmit_service - INFO - Resubmit requested: case=34010023, record=D5D858FE-55B6-4E16-A4F2-F06B54187E8A, by=admin, reason=test
+2026-06-30 17:19:19,221 - database.connection - ERROR - [PlatformSupportDB] Non-query error: ('42S02', "[42S02] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'dbo.ResubmitAuditLog'. (208) (SQLExecDirectW); [42S02] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)")
+2026-06-30 17:19:19,221 - services.resubmit_service - ERROR - Resubmit error: ('42S02', "[42S02] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'dbo.ResubmitAuditLog'. (208) (SQLExecDirectW); [42S02] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)")
+2026-06-30 17:19:19,768 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 17:19:19] "[35m[1mPOST /api/resubmit HTTP/1.1[0m" 500 -
+2026-06-30 17:21:00,262 - root - INFO - Request: POST http://localhost:5000/search
+2026-06-30 17:21:00,264 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 17:21:00] "[32mPOST /search HTTP/1.1[0m" 302 -
+2026-06-30 17:21:00,525 - root - INFO - Request: GET http://localhost:5000/resubmit-details?case_number=34010023&guid=d5d858fe-55b6-4e16-a4f2-f06b54187e8a
+2026-06-30 17:21:00,526 - database.connection - INFO - [TibcoDB] Executing: 
+        SELECT TOP 1
+            cda.field_value  AS InvestorId,
+            cia.started      AS CaseStarted,
+            cia.proc_id      AS ProcId,
+            pi.proc_name     AS ProcName
+        FROM swpro.case_data cda WITH (NOLOCK)
+        INNER JOIN swpro.case_information cia WITH (NOLOCK)
+            ON cia.casenum = cda.casenum
+        INNER JOIN swpro.proc_index pi WITH (NOLOCK)
+            ON pi.proc_id = cia.proc_id
+        WHERE cda.casenum = ?
+          AND cda.field_name = 'IVINVESTORID'
+    
+2026-06-30 17:21:00,527 - database.connection - INFO - [TibcoDB] Params: ['34010023']
+2026-06-30 17:21:03,669 - database.connection - INFO - [WSDMessagesDB] Executing: 
+            SELECT TOP 1
+                ? AS CaseNum,
+                ? AS InvestorId,
+                ? AS ProcId,
+                ? AS ProcName,
+                ? AS CaseStarted,
+                MessageIdentifier,
+                CreateDateTime,
+                ABS(DATEDIFF(SECOND, CreateDateTime, ?)) AS DiffSeconds
+            FROM dbo.wsd_messages WITH (NOLOCK)
+            WHERE ClientIdentifier = ?
+              AND MessageIdentifier = ?
+            ORDER BY DiffSeconds
+        
+2026-06-30 17:21:03,669 - database.connection - INFO - [WSDMessagesDB] Params: ['34010023', '1452082', 36, 'NBM041NB', '2026-06-24 11:24:16.000', '2026-06-24 11:24:16.000', '1452082', 'd5d858fe-55b6-4e16-a4f2-f06b54187e8a']
+2026-06-30 17:21:06,718 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 17:21:06] "GET /resubmit-details?case_number=34010023&guid=d5d858fe-55b6-4e16-a4f2-f06b54187e8a HTTP/1.1" 200 -
+2026-06-30 17:21:06,765 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 17:21:06,769 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 17:21:06] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 17:21:07,069 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 17:21:07,069 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 17:21:07,069 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 17:21:07] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+2026-06-30 17:21:07,069 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 17:21:07] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2026-06-30 17:22:38,030 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_wsd_schema.py', reloading
+2026-06-30 17:22:38,203 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 17:22:39,271 - root - INFO - Case Resubmit Application started.
+2026-06-30 17:22:39,285 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 17:22:39,291 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 17:27:06,938 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\run.py', reloading
+2026-06-30 17:27:06,944 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\app\\__init__.py', reloading
+2026-06-30 17:27:06,949 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\app\\routes.py', reloading
+2026-06-30 17:27:08,042 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 17:27:08,731 - root - INFO - Case Resubmit Application started.
+2026-06-30 17:27:08,789 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 17:27:08,795 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 17:28:49,008 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_wsd_schema.py', reloading
+2026-06-30 17:28:49,841 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 17:28:50,691 - root - INFO - Case Resubmit Application started.
+2026-06-30 17:28:50,709 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 17:28:50,711 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 17:29:15,885 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_wsd_schema.py', reloading
+2026-06-30 17:29:15,886 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_wsd_schema.py', reloading
+2026-06-30 17:29:15,886 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_wsd_schema.py', reloading
+2026-06-30 17:29:16,151 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 17:29:16,949 - root - INFO - Case Resubmit Application started.
+2026-06-30 17:29:16,969 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 17:29:16,972 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 17:29:29,218 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_wsd_schema.py', reloading
+2026-06-30 17:29:29,221 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_wsd_schema.py', reloading
+2026-06-30 17:29:29,221 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_wsd_schema.py', reloading
+2026-06-30 17:29:29,344 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 17:29:30,617 - root - INFO - Case Resubmit Application started.
+2026-06-30 17:29:30,642 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 17:29:30,645 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 17:33:39,794 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 17:33:39,796 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 17:33:39,798 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 17:33:40,866 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 17:33:41,731 - root - INFO - Case Resubmit Application started.
+2026-06-30 17:33:41,746 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 17:33:41,762 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 17:34:18,263 - root - INFO - Request: POST http://localhost:5000/search
+2026-06-30 17:34:18,279 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 17:34:18] "[32mPOST /search HTTP/1.1[0m" 302 -
+2026-06-30 17:34:18,511 - root - INFO - Request: GET http://localhost:5000/resubmit-details?case_number=34010023&guid=d5d858fe-55b6-4e16-a4f2-f06b54187e8a
+2026-06-30 17:34:22,360 - database.connection - INFO - [PlatformSupportDB] Database connection established successfully.
+2026-06-30 17:34:26,011 - database.connection - INFO - [TibcoDB] Database connection established successfully.
+2026-06-30 17:34:29,632 - database.connection - INFO - [WSDMessagesDB] Database connection established successfully.
+2026-06-30 17:34:29,633 - database.connection - INFO - [TibcoDB] Executing: 
+        SELECT TOP 1
+            cda.field_value  AS InvestorId,
+            cia.started      AS CaseStarted,
+            cia.proc_id      AS ProcId,
+            pi.proc_name     AS ProcName
+        FROM swpro.case_data cda WITH (NOLOCK)
+        INNER JOIN swpro.case_information cia WITH (NOLOCK)
+            ON cia.casenum = cda.casenum
+        INNER JOIN swpro.proc_index pi WITH (NOLOCK)
+            ON pi.proc_id = cia.proc_id
+        WHERE cda.casenum = ?
+          AND cda.field_name = 'IVINVESTORID'
+    
+2026-06-30 17:34:29,634 - database.connection - INFO - [TibcoDB] Params: ['34010023']
+2026-06-30 17:34:31,009 - database.connection - INFO - [WSDMessagesDB] Executing: 
+            SELECT TOP 1
+                ? AS CaseNum,
+                ? AS InvestorId,
+                ? AS ProcId,
+                ? AS ProcName,
+                ? AS CaseStarted,
+                MessageIdentifier,
+                AdviserIdentifier,
+                ClientIdentifier,
+                MessageType,
+                MessageBody,
+                MessageStatus,
+                CreateDateTime,
+                CompletedDateTime,
+                ABS(DATEDIFF(SECOND, CreateDateTime, ?)) AS DiffSeconds
+            FROM dbo.wsd_messages WITH (NOLOCK)
+            WHERE ClientIdentifier = ?
+              AND MessageIdentifier = ?
+            ORDER BY DiffSeconds
+        
+2026-06-30 17:34:31,010 - database.connection - INFO - [WSDMessagesDB] Params: ['34010023', '1452082', 36, 'NBM041NB', '2026-06-24 11:24:16.000', '2026-06-24 11:24:16.000', '1452082', 'd5d858fe-55b6-4e16-a4f2-f06b54187e8a']
+2026-06-30 17:34:32,572 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 17:34:32] "GET /resubmit-details?case_number=34010023&guid=d5d858fe-55b6-4e16-a4f2-f06b54187e8a HTTP/1.1" 200 -
+2026-06-30 17:34:32,618 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 17:34:32,929 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 17:34:32,929 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 17:34:32,929 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 17:34:32] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 17:34:32,938 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 17:34:32] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+2026-06-30 17:34:32,975 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 17:34:32] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2026-06-30 17:44:57,159 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 17:44:57,159 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 17:44:57,159 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 17:44:57,602 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 17:50:42,831 - root - INFO - Case Resubmit Application started.
+2026-06-30 17:50:44,313 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.44.96.234:5000
+2026-06-30 17:50:44,314 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-30 17:50:44,336 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 17:50:44,884 - root - INFO - Case Resubmit Application started.
+2026-06-30 17:50:44,899 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 17:50:44,902 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 17:58:33,410 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_db_connections.py', reloading
+2026-06-30 17:58:33,412 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\app\\routes.py', reloading
+2026-06-30 17:58:33,413 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 17:58:33,414 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_db_connections.py', reloading
+2026-06-30 17:58:33,415 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 17:58:33,416 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\database\\connection.py', reloading
+2026-06-30 17:58:33,418 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_db_connections.py', reloading
+2026-06-30 17:58:33,419 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 17:58:33,420 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_wsd_schema.py', reloading
+2026-06-30 17:58:33,422 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\app\\routes.py', reloading
+2026-06-30 17:58:33,424 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\database\\connection.py', reloading
+2026-06-30 17:58:33,424 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_wsd_schema.py', reloading
+2026-06-30 17:58:34,299 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 17:58:35,516 - root - INFO - Case Resubmit Application started.
+2026-06-30 17:58:35,532 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 17:58:35,548 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 17:58:47,969 - werkzeug - INFO -  * Detected change in 'C:\\Users\\msidd\\AppData\\Roaming\\Python\\Python310\\site-packages\\colorama\\tests\\__init__.py', reloading
+2026-06-30 17:58:48,787 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 17:58:49,619 - root - INFO - Case Resubmit Application started.
+2026-06-30 17:58:49,650 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 17:58:49,653 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 17:59:37,497 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\setup.py', reloading
+2026-06-30 17:59:37,685 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 17:59:39,495 - root - INFO - Case Resubmit Application started.
+2026-06-30 17:59:39,520 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 17:59:39,527 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 18:00:09,177 - root - INFO - Request: GET http://localhost:5000/search
+2026-06-30 18:00:09,521 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 18:00:09] "GET /search HTTP/1.1" 200 -
+2026-06-30 18:00:09,573 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 18:00:09,887 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 18:00:09,892 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 18:00:10,339 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 18:00:10] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 18:00:10,785 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 18:00:10] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+2026-06-30 18:00:10,868 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 18:00:10] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2026-06-30 18:00:36,820 - root - INFO - Request: POST http://localhost:5000/search
+2026-06-30 18:00:36,823 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 18:00:36] "[32mPOST /search HTTP/1.1[0m" 302 -
+2026-06-30 18:00:37,059 - root - INFO - Request: GET http://localhost:5000/resubmit-details?case_number=34010023&guid=d5d858fe-55b6-4e16-a4f2-f06b54187e8a
+2026-06-30 18:00:41,229 - database.connection - INFO - [PlatformSupportDB] Database connection established successfully.
+2026-06-30 18:00:45,119 - database.connection - INFO - [TibcoDB] Database connection established successfully.
+2026-06-30 18:00:48,735 - database.connection - INFO - [WSDMessagesDB] Database connection established successfully.
+2026-06-30 18:00:48,736 - database.connection - INFO - [TibcoDB] Executing: 
+        SELECT TOP 1
+            cda.field_value  AS InvestorId,
+            cia.started      AS CaseStarted,
+            cia.proc_id      AS ProcId,
+            pi.proc_name     AS ProcName
+        FROM swpro.case_data cda WITH (NOLOCK)
+        INNER JOIN swpro.case_information cia WITH (NOLOCK)
+            ON cia.casenum = cda.casenum
+        INNER JOIN swpro.proc_index pi WITH (NOLOCK)
+            ON pi.proc_id = cia.proc_id
+        WHERE cda.casenum = ?
+          AND cda.field_name = 'IVINVESTORID'
+    
+2026-06-30 18:00:48,737 - database.connection - INFO - [TibcoDB] Params: ['34010023']
+2026-06-30 18:00:50,140 - database.connection - INFO - [WSDMessagesDB] Executing: 
+            SELECT TOP 1
+                ? AS CaseNum,
+                ? AS InvestorId,
+                ? AS ProcId,
+                ? AS ProcName,
+                ? AS CaseStarted,
+                MessageIdentifier,
+                AdviserIdentifier,
+                ClientIdentifier,
+                MessageType,
+                MessageBody,
+                MessageStatus,
+                CreateDateTime,
+                CompletedDateTime,
+                ABS(DATEDIFF(SECOND, CreateDateTime, ?)) AS DiffSeconds
+            FROM dbo.wsd_messages WITH (NOLOCK)
+            WHERE ClientIdentifier = ?
+              AND MessageIdentifier = ?
+            ORDER BY DiffSeconds
+        
+2026-06-30 18:00:50,143 - database.connection - INFO - [WSDMessagesDB] Params: ['34010023', '1452082', 36, 'NBM041NB', '2026-06-24 11:24:16.000', '2026-06-24 11:24:16.000', '1452082', 'd5d858fe-55b6-4e16-a4f2-f06b54187e8a']
+2026-06-30 18:00:51,801 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 18:00:51] "GET /resubmit-details?case_number=34010023&guid=d5d858fe-55b6-4e16-a4f2-f06b54187e8a HTTP/1.1" 200 -
+2026-06-30 18:00:51,837 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 18:00:51,843 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 18:00:51] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 18:00:52,155 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 18:00:52,157 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 18:00:52,159 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 18:00:52] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+2026-06-30 18:00:52,161 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 18:00:52] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2026-06-30 18:01:31,643 - root - INFO - Request: POST http://localhost:5000/api/resubmit
+2026-06-30 18:01:33,359 - services.resubmit_service - INFO - Resubmit requested: case=34010023, guid=D5D858FE-55B6-4E16-A4F2-F06B54187E8A, investor=1452082, by=admin, reason=Test
+2026-06-30 18:01:54,414 - stomp.py - WARNING - could not connect to host UK-man-ems-01, port 61613: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2026-06-30 18:02:15,689 - stomp.py - WARNING - could not connect to host UK-man-ems-01, port 61613: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2026-06-30 18:02:36,949 - stomp.py - WARNING - could not connect to host UK-man-ems-01, port 61613: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2026-06-30 18:02:37,128 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 18:02:37,130 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 18:02:37,132 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 18:02:37,357 - services.resubmit_service - ERROR - JMS send failed: 
+2026-06-30 18:02:37,358 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 18:02:37] "[35m[1mPOST /api/resubmit HTTP/1.1[0m" 500 -
+2026-06-30 18:02:37,870 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 18:02:39,321 - root - INFO - Case Resubmit Application started.
+2026-06-30 18:02:39,360 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 18:02:39,367 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 18:04:43,969 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 18:04:43,971 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 18:04:43,973 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 18:04:44,722 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 18:04:45,364 - root - INFO - Case Resubmit Application started.
+2026-06-30 18:04:45,386 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 18:04:45,389 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 18:08:55,226 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 18:08:55,226 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 18:08:55,716 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 18:08:56,631 - root - INFO - Case Resubmit Application started.
+2026-06-30 18:08:56,654 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 18:08:56,657 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 18:09:33,774 - root - INFO - Request: POST http://localhost:5000/api/resubmit
+2026-06-30 18:09:33,810 - services.resubmit_service - INFO - Resubmit requested: case=34010023, guid=D5D858FE-55B6-4E16-A4F2-F06B54187E8A, investor=1452082, by=admin, reason=test
+2026-06-30 18:09:40,922 - services.resubmit_service - ERROR - EmsProducer exited 1: Exception in thread "main" javax.jms.JMSException: Failed to connect to the server at tcp://UK-man-ems-01:61613
+	at com.tibco.tibjms.TibjmsxLinkTcp._createSocket(TibjmsxLinkTcp.java:823)
+	at com.tibco.tibjms.TibjmsxLinkTcp.connect(TibjmsxLinkTcp.java:914)
+	at com.tibco.tibjms.TibjmsConnection._create(TibjmsConnection.java:1351)
+	at com.tibco.tibjms.TibjmsConnection.<init>(TibjmsConnection.java:4311)
+	at com.tibco.tibjms.TibjmsxCFImpl._createImpl(TibjmsxCFImpl.java:209)
+	at com.tibco.tibjms.TibjmsxCFImpl._createConnection(TibjmsxCFImpl.java:253)
+	at com.tibco.tibjms.TibjmsConnectionFactory.createConnection(TibjmsConnectionFactory.java:58)
+	at EmsProducer.main(EmsProducer.java:33)
+2026-06-30 18:09:40,924 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 18:09:40] "[35m[1mPOST /api/resubmit HTTP/1.1[0m" 500 -
+2026-06-30 18:11:49,167 - root - INFO - Case Resubmit Application started.
+2026-06-30 18:11:50,623 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.44.96.234:5000
+2026-06-30 18:11:50,626 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-30 18:11:50,657 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 18:11:51,263 - root - INFO - Case Resubmit Application started.
+2026-06-30 18:11:51,282 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 18:11:51,285 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 18:12:15,050 - root - INFO - Request: POST http://localhost:5000/api/resubmit
+2026-06-30 18:12:15,087 - services.resubmit_service - INFO - Resubmit requested: case=34010023, guid=D5D858FE-55B6-4E16-A4F2-F06B54187E8A, investor=1452082, by=admin, reason=Test
+2026-06-30 18:12:17,770 - services.resubmit_service - INFO - JMS message sent to AJBG.FrameworkServices.CreateCase for case 34010023.
+2026-06-30 18:12:17,772 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 18:12:17] "POST /api/resubmit HTTP/1.1" 200 -
+2026-06-30 18:15:32,162 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\app\\routes.py', reloading
+2026-06-30 18:15:32,163 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\app\\routes.py', reloading
+2026-06-30 18:15:32,163 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\app\\routes.py', reloading
+2026-06-30 18:15:32,204 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 18:15:32,207 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 18:15:32,883 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 18:15:34,116 - root - INFO - Case Resubmit Application started.
+2026-06-30 18:15:34,167 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 18:15:34,179 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 18:16:51,601 - root - INFO - Request: POST http://localhost:5000/api/resubmit
+2026-06-30 18:16:51,645 - services.resubmit_service - INFO - Resubmit requested: case=34010023, guid=D5D858FE-55B6-4E16-A4F2-F06B54187E8A, investor=1452082, by=admin, reason=yes
+2026-06-30 18:16:54,497 - services.resubmit_service - INFO - JMS message sent to AJBG.FrameworkServices.CreateCase for case 34010023.
+2026-06-30 18:16:54,498 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 18:16:54] "POST /api/resubmit HTTP/1.1" 200 -
+2026-06-30 18:17:37,157 - root - INFO - Request: POST http://localhost:5000/api/resubmit
+2026-06-30 18:17:37,158 - services.resubmit_service - INFO - Resubmit requested: case=34010023, guid=D5D858FE-55B6-4E16-A4F2-F06B54187E8A, investor=1452082, by=admin, reason=yes
+2026-06-30 18:17:39,796 - services.resubmit_service - INFO - JMS message sent to AJBG.FrameworkServices.CreateCase for case 34010023.
+2026-06-30 18:17:39,797 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 18:17:39] "POST /api/resubmit HTTP/1.1" 200 -
+2026-06-30 18:17:58,068 - root - INFO - Request: POST http://localhost:5000/api/resubmit
+2026-06-30 18:17:58,068 - services.resubmit_service - INFO - Resubmit requested: case=34010023, guid=D5D858FE-55B6-4E16-A4F2-F06B54187E8A, investor=1452082, by=admin, reason=yes
+2026-06-30 18:18:00,714 - services.resubmit_service - INFO - JMS message sent to AJBG.FrameworkServices.CreateCase for case 34010023.
+2026-06-30 18:18:00,716 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 18:18:00] "POST /api/resubmit HTTP/1.1" 200 -
+2026-06-30 18:24:14,108 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\run.py', reloading
+2026-06-30 18:24:14,110 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\app\\__init__.py', reloading
+2026-06-30 18:24:14,114 - werkzeug - INFO -  * Detected change in 'C:\\Users\\msidd\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\__init__.py', reloading
+2026-06-30 18:24:14,132 - werkzeug - INFO -  * Detected change in 'C:\\Users\\msidd\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\json\\__init__.py', reloading
+2026-06-30 18:24:14,133 - werkzeug - INFO -  * Detected change in 'C:\\Users\\msidd\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\dotenv\\__init__.py', reloading
+2026-06-30 18:24:14,135 - werkzeug - INFO -  * Detected change in 'C:\\Users\\msidd\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\blueprints.py', reloading
+2026-06-30 18:24:14,137 - werkzeug - INFO -  * Detected change in 'C:\\Users\\msidd\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\globals.py', reloading
+2026-06-30 18:24:14,138 - werkzeug - INFO -  * Detected change in 'C:\\Users\\msidd\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\helpers.py', reloading
+2026-06-30 18:24:14,139 - werkzeug - INFO -  * Detected change in 'C:\\Users\\msidd\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\templating.py', reloading
+2026-06-30 18:24:14,142 - werkzeug - INFO -  * Detected change in 'C:\\Users\\msidd\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\typing.py', reloading
+2026-06-30 18:24:14,143 - werkzeug - INFO -  * Detected change in 'C:\\Users\\msidd\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\dotenv\\main.py', reloading
+2026-06-30 18:24:14,144 - werkzeug - INFO -  * Detected change in 'C:\\Users\\msidd\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\scaffold.py', reloading
+2026-06-30 18:24:14,146 - werkzeug - INFO -  * Detected change in 'C:\\Users\\msidd\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\jinja2\\__init__.py', reloading
+2026-06-30 18:24:14,147 - werkzeug - INFO -  * Detected change in 'C:\\Users\\msidd\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\werkzeug\\utils.py', reloading
+2026-06-30 18:24:14,150 - werkzeug - INFO -  * Detected change in 'C:\\Users\\msidd\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\wrappers.py', reloading
+2026-06-30 18:24:14,151 - werkzeug - INFO -  * Detected change in 'C:\\Users\\msidd\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\werkzeug\\datastructures\\__init__.py', reloading
+2026-06-30 18:24:14,155 - werkzeug - INFO -  * Detected change in 'C:\\Users\\msidd\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\werkzeug\\wrappers\\__init__.py', reloading
+2026-06-30 18:24:14,156 - werkzeug - INFO -  * Detected change in 'C:\\Users\\msidd\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\werkzeug\\wrappers\\request.py', reloading
+2026-06-30 18:24:14,157 - werkzeug - INFO -  * Detected change in 'C:\\Users\\msidd\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\werkzeug\\wrappers\\response.py', reloading
+2026-06-30 18:24:14,159 - werkzeug - INFO -  * Detected change in 'C:\\Users\\msidd\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\werkzeug\\sansio\\response.py', reloading
+2026-06-30 18:24:14,161 - werkzeug - INFO -  * Detected change in 'C:\\Users\\msidd\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\werkzeug\\_internal.py', reloading
+2026-06-30 18:24:14,163 - werkzeug - INFO -  * Detected change in 'C:\\Users\\msidd\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\sessions.py', reloading
+2026-06-30 18:24:14,165 - werkzeug - INFO -  * Detected change in 'C:\\Users\\msidd\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\jinja2\\environment.py', reloading
+2026-06-30 18:24:14,166 - werkzeug - INFO -  * Detected change in 'C:\\Users\\msidd\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\werkzeug\\sansio\\request.py', reloading
+2026-06-30 18:24:14,172 - werkzeug - INFO -  * Detected change in 'C:\\Users\\msidd\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\os.py', reloading
+2026-06-30 18:24:14,614 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 18:24:15,279 - root - INFO - Case Resubmit Application started.
+2026-06-30 18:24:15,294 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 18:24:15,297 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 18:29:02,454 - root - INFO - Case Resubmit Application started.
+2026-06-30 18:29:03,911 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.44.96.234:5000
+2026-06-30 18:29:03,912 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-30 18:29:03,949 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 18:29:04,650 - root - INFO - Case Resubmit Application started.
+2026-06-30 18:29:04,665 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 18:29:04,670 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 18:29:31,310 - root - INFO - Request: POST http://localhost:5000/api/resubmit
+2026-06-30 18:29:31,348 - services.resubmit_service - INFO - Resubmit requested: case=34010023, guid=D5D858FE-55B6-4E16-A4F2-F06B54187E8A, investor=1452082, by=admin, reason=test
+2026-06-30 18:29:32,206 - services.resubmit_service - INFO - EmsProducer.java compiled successfully.
+2026-06-30 18:29:34,848 - services.resubmit_service - INFO - JMS message sent to AJBG.FrameworkServices.CreateCase for case 34010023.
+2026-06-30 18:29:34,851 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 18:29:34] "POST /api/resubmit HTTP/1.1" 200 -
+2026-06-30 18:29:39,531 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 18:29:39,534 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\app\\routes.py', reloading
+2026-06-30 18:29:39,537 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 18:29:39,538 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 18:29:39,538 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\app\\routes.py', reloading
+2026-06-30 18:29:40,403 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 18:29:41,107 - root - INFO - Case Resubmit Application started.
+2026-06-30 18:29:41,126 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 18:29:41,130 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 18:37:09,720 - root - INFO - Request: GET http://localhost:5000/search
+2026-06-30 18:37:09,998 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 18:37:09] "GET /search HTTP/1.1" 200 -
+2026-06-30 18:37:10,102 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 18:37:10,414 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 18:37:10,417 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 18:37:10,789 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 18:37:10] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 18:37:11,053 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 18:37:11] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+2026-06-30 18:37:11,087 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 18:37:11] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2026-06-30 18:37:19,279 - root - INFO - Request: POST http://localhost:5000/search
+2026-06-30 18:37:19,280 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 18:37:19] "[32mPOST /search HTTP/1.1[0m" 302 -
+2026-06-30 18:37:19,547 - root - INFO - Request: GET http://localhost:5000/resubmit-details?case_number=34010023&guid=d5d858fe-55b6-4e16-a4f2-f06b54187e8a
+2026-06-30 18:37:23,558 - database.connection - INFO - [PlatformSupportDB] Database connection established successfully.
+2026-06-30 18:37:27,208 - database.connection - INFO - [TibcoDB] Database connection established successfully.
+2026-06-30 18:37:30,928 - database.connection - INFO - [WSDMessagesDB] Database connection established successfully.
+2026-06-30 18:37:30,929 - database.connection - INFO - [TibcoDB] Executing: 
+        SELECT TOP 1
+            cda.field_value  AS InvestorId,
+            cia.started      AS CaseStarted,
+            cia.proc_id      AS ProcId,
+            pi.proc_name     AS ProcName
+        FROM swpro.case_data cda WITH (NOLOCK)
+        INNER JOIN swpro.case_information cia WITH (NOLOCK)
+            ON cia.casenum = cda.casenum
+        INNER JOIN swpro.proc_index pi WITH (NOLOCK)
+            ON pi.proc_id = cia.proc_id
+        WHERE cda.casenum = ?
+          AND cda.field_name = 'IVINVESTORID'
+    
+2026-06-30 18:37:30,930 - database.connection - INFO - [TibcoDB] Params: ['34010023']
+2026-06-30 18:37:32,332 - database.connection - INFO - [WSDMessagesDB] Executing: 
+            SELECT TOP 1
+                ? AS CaseNum,
+                ? AS InvestorId,
+                ? AS ProcId,
+                ? AS ProcName,
+                ? AS CaseStarted,
+                MessageIdentifier,
+                AdviserIdentifier,
+                ClientIdentifier,
+                MessageType,
+                MessageBody,
+                MessageStatus,
+                CreateDateTime,
+                CompletedDateTime,
+                ABS(DATEDIFF(SECOND, CreateDateTime, ?)) AS DiffSeconds
+            FROM dbo.wsd_messages WITH (NOLOCK)
+            WHERE ClientIdentifier = ?
+              AND MessageIdentifier = ?
+            ORDER BY DiffSeconds
+        
+2026-06-30 18:37:32,333 - database.connection - INFO - [WSDMessagesDB] Params: ['34010023', '1452082', 36, 'NBM041NB', '2026-06-24 11:24:16.000', '2026-06-24 11:24:16.000', '1452082', 'd5d858fe-55b6-4e16-a4f2-f06b54187e8a']
+2026-06-30 18:37:33,802 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 18:37:33] "GET /resubmit-details?case_number=34010023&guid=d5d858fe-55b6-4e16-a4f2-f06b54187e8a HTTP/1.1" 200 -
+2026-06-30 18:37:33,844 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 18:37:33,848 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 18:37:33] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 18:37:34,155 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 18:37:34,156 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 18:37:34,159 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 18:37:34] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+2026-06-30 18:37:34,164 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 18:37:34] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2026-06-30 18:42:41,171 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 18:42:41,173 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 18:42:41,175 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 18:42:42,014 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 18:42:42,950 - root - INFO - Case Resubmit Application started.
+2026-06-30 18:42:42,977 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 18:42:42,980 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 18:43:10,182 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\app\\routes.py', reloading
+2026-06-30 18:43:10,184 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\app\\routes.py', reloading
+2026-06-30 18:43:10,185 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\app\\routes.py', reloading
+2026-06-30 18:43:10,611 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 18:43:11,908 - root - INFO - Case Resubmit Application started.
+2026-06-30 18:43:11,956 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 18:43:11,963 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 18:43:49,981 - root - INFO - Case Resubmit Application started.
+2026-06-30 18:43:51,468 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.44.96.234:5000
+2026-06-30 18:43:51,469 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-30 18:43:51,526 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 18:43:53,016 - root - INFO - Case Resubmit Application started.
+2026-06-30 18:43:53,066 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 18:43:53,073 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 18:45:09,786 - root - INFO - Request: POST http://localhost:5000/api/resubmit
+2026-06-30 18:45:09,828 - services.resubmit_service - INFO - Resubmit requested: case=34010023, guid=D5D858FE-55B6-4E16-A4F2-F06B54187E8A, investor=1452082, by=admin, reason=Yes
+2026-06-30 18:45:43,112 - services.resubmit_service - ERROR - EmsProducer timed out waiting for reply.
+2026-06-30 18:45:43,113 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 18:45:43] "[35m[1mPOST /api/resubmit HTTP/1.1[0m" 500 -
+2026-06-30 18:51:11,419 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 18:51:11,420 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\services\\resubmit_service.py', reloading
+2026-06-30 18:51:11,953 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 18:51:13,149 - root - INFO - Case Resubmit Application started.
+2026-06-30 18:51:13,170 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 18:51:13,174 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 18:51:25,345 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\app\\routes.py', reloading
+2026-06-30 18:51:25,358 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\app\\routes.py', reloading
+2026-06-30 18:51:25,520 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 18:51:26,763 - root - INFO - Case Resubmit Application started.
+2026-06-30 18:51:26,815 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 18:51:26,825 - werkzeug - INFO -  * Debugger PIN: 123-554-726
+2026-06-30 18:53:00,077 - root - INFO - Request: GET http://localhost:5000/resubmit-details?case_number=34010023&guid=d5d858fe-55b6-4e16-a4f2-f06b54187e8a
+2026-06-30 18:53:03,995 - database.connection - INFO - [PlatformSupportDB] Database connection established successfully.
+2026-06-30 18:53:07,614 - database.connection - INFO - [TibcoDB] Database connection established successfully.
+2026-06-30 18:53:11,206 - database.connection - INFO - [WSDMessagesDB] Database connection established successfully.
+2026-06-30 18:53:11,207 - database.connection - INFO - [TibcoDB] Executing: 
+        SELECT TOP 1
+            cda.field_value  AS InvestorId,
+            cia.started      AS CaseStarted,
+            cia.proc_id      AS ProcId,
+            pi.proc_name     AS ProcName
+        FROM swpro.case_data cda WITH (NOLOCK)
+        INNER JOIN swpro.case_information cia WITH (NOLOCK)
+            ON cia.casenum = cda.casenum
+        INNER JOIN swpro.proc_index pi WITH (NOLOCK)
+            ON pi.proc_id = cia.proc_id
+        WHERE cda.casenum = ?
+          AND cda.field_name = 'IVINVESTORID'
+    
+2026-06-30 18:53:11,207 - database.connection - INFO - [TibcoDB] Params: ['34010023']
+2026-06-30 18:53:12,581 - database.connection - INFO - [WSDMessagesDB] Executing: 
+            SELECT TOP 1
+                ? AS CaseNum,
+                ? AS InvestorId,
+                ? AS ProcId,
+                ? AS ProcName,
+                ? AS CaseStarted,
+                MessageIdentifier,
+                AdviserIdentifier,
+                ClientIdentifier,
+                MessageType,
+                MessageBody,
+                MessageStatus,
+                CreateDateTime,
+                CompletedDateTime,
+                ABS(DATEDIFF(SECOND, CreateDateTime, ?)) AS DiffSeconds
+            FROM dbo.wsd_messages WITH (NOLOCK)
+            WHERE ClientIdentifier = ?
+              AND MessageIdentifier = ?
+            ORDER BY DiffSeconds
+        
+2026-06-30 18:53:12,583 - database.connection - INFO - [WSDMessagesDB] Params: ['34010023', '1452082', 36, 'NBM041NB', '2026-06-24 11:24:16.000', '2026-06-24 11:24:16.000', '1452082', 'd5d858fe-55b6-4e16-a4f2-f06b54187e8a']
+2026-06-30 18:53:14,118 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 18:53:14] "GET /resubmit-details?case_number=34010023&guid=d5d858fe-55b6-4e16-a4f2-f06b54187e8a HTTP/1.1" 200 -
+2026-06-30 18:53:14,160 - root - INFO - Request: GET http://localhost:5000/static/css/styles.css
+2026-06-30 18:53:14,462 - root - INFO - Request: GET http://localhost:5000/static/img/logo.png
+2026-06-30 18:53:14,464 - root - INFO - Request: GET http://localhost:5000/static/js/scripts.js
+2026-06-30 18:53:14,591 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 18:53:14] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-06-30 18:53:14,830 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 18:53:14] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+2026-06-30 18:53:14,839 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 18:53:14] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2026-06-30 18:53:15,164 - root - INFO - Request: GET http://localhost:5000/static/img/Sybmol.png
+2026-06-30 18:53:15,164 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 18:53:15] "[36mGET /static/img/Sybmol.png HTTP/1.1[0m" 304 -
+2026-06-30 18:53:33,220 - root - INFO - Request: POST http://localhost:5000/api/amend-status
+2026-06-30 18:53:34,612 - services.resubmit_service - INFO - MessageStatus set to 1 for MessageIdentifier=D5D858FE-55B6-4E16-A4F2-F06B54187E8A
+2026-06-30 18:53:34,614 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2026 18:53:34] "POST /api/amend-status HTTP/1.1" 200 -
+2026-06-30 18:57:56,581 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_diagnose.py', reloading
+2026-06-30 18:57:56,587 - werkzeug - INFO -  * Detected change in 'C:\\case_resubmit\\test_tibco_query.py', reloading
+2026-06-30 18:57:56,684 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-30 18:57:57,530 - root - INFO - Case Resubmit Application started.
+2026-06-30 18:57:57,564 - werkzeug - WARNING -  * Debugger is active!
+2026-06-30 18:57:57,580 - werkzeug - INFO -  * Debugger PIN: 123-554-726

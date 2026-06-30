@@ -1,0 +1,57 @@
+2026-06-30 15:40:51,609 - database.connection - INFO - [PlatformSupportDB] Database connection established successfully.
+2026-06-30 15:41:17,618 - database.connection - INFO - [PlatformSupportDB] Database connection established successfully.
+2026-06-30 15:41:20,897 - database.connection - WARNING - [TibcoCaseDataDB] Could not connect to database: ('28000', '[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'msidddev\'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "WebSupportDatabase" requested by the login. The login failed. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'msidddev\'. (18456); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "WebSupportDatabase" requested by the login. The login failed. (4060)'). Application will use mock data.
+2026-06-30 15:41:25,048 - database.connection - INFO - [TibcodomainRepDB] Database connection established successfully.
+2026-06-30 15:41:29,703 - database.connection - INFO - [WSDMessagesDB] Database connection established successfully.
+2026-06-30 17:20:31,652 - database.connection - INFO - [PlatformSupportDB] Database connection established successfully.
+2026-06-30 17:20:35,286 - database.connection - INFO - [TibcoDB] Database connection established successfully.
+2026-06-30 17:20:38,900 - database.connection - INFO - [WSDMessagesDB] Database connection established successfully.
+2026-06-30 17:20:38,901 - database.connection - INFO - [WSDMessagesDB] Executing: 
+    SELECT name, type_desc FROM sys.objects
+    WHERE type IN (''P'',''FN'',''IF'',''TF'')
+      AND (name LIKE ''%resubmit%'' OR name LIKE ''%Resubmit%'' OR name LIKE ''%wsd%'' OR name LIKE ''%message%'' OR name LIKE ''%Message%'' OR name LIKE ''%submit%'')
+    ORDER BY type_desc, name
+
+2026-06-30 17:20:39,452 - database.connection - ERROR - [WSDMessagesDB] Query error: ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near 'P'. (102) (SQLExecDirectW); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]An expression of non-boolean type specified in a context where a condition is expected, near ','. (4145)")
+2026-06-30 17:21:41,022 - database.connection - INFO - [PlatformSupportDB] Database connection established successfully.
+2026-06-30 17:21:44,654 - database.connection - INFO - [TibcoDB] Database connection established successfully.
+2026-06-30 17:21:48,250 - database.connection - INFO - [WSDMessagesDB] Database connection established successfully.
+2026-06-30 17:21:50,265 - database.connection - INFO - [WSDMessagesDB] Executing: SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE=?
+2026-06-30 17:21:50,266 - database.connection - INFO - [WSDMessagesDB] Params: ['BASE TABLE']
+2026-06-30 17:21:51,684 - database.connection - INFO - [WSDMessagesDB] Executing: SELECT COLUMN_NAME, DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME=?
+2026-06-30 17:21:51,684 - database.connection - INFO - [WSDMessagesDB] Params: ['wsd_messages']
+2026-06-30 17:21:53,077 - database.connection - INFO - [WSDMessagesDB] Executing: SELECT name FROM sys.objects WHERE type=? AND (name LIKE ? OR name LIKE ? OR name LIKE ?)
+2026-06-30 17:21:53,077 - database.connection - INFO - [WSDMessagesDB] Params: ['P', '%resubmit%', '%submit%', '%message%']
+2026-06-30 17:22:02,491 - database.connection - INFO - [PlatformSupportDB] Database connection established successfully.
+2026-06-30 17:22:06,059 - database.connection - INFO - [TibcoDB] Database connection established successfully.
+2026-06-30 17:22:09,670 - database.connection - INFO - [WSDMessagesDB] Database connection established successfully.
+2026-06-30 17:22:09,670 - database.connection - INFO - [WSDMessagesDB] Executing: SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE=?
+2026-06-30 17:22:09,670 - database.connection - INFO - [WSDMessagesDB] Params: ['BASE TABLE']
+2026-06-30 17:22:11,084 - database.connection - INFO - [WSDMessagesDB] Executing: SELECT COLUMN_NAME, DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME=?
+2026-06-30 17:22:11,084 - database.connection - INFO - [WSDMessagesDB] Params: ['wsd_messages']
+2026-06-30 17:22:12,461 - database.connection - INFO - [WSDMessagesDB] Executing: SELECT name FROM sys.objects WHERE type=? AND (LOWER(name) LIKE ? OR LOWER(name) LIKE ?)
+2026-06-30 17:22:12,462 - database.connection - INFO - [WSDMessagesDB] Params: ['P', '%resubmit%', '%submit%']
+2026-06-30 17:23:13,776 - database.connection - INFO - [PlatformSupportDB] Database connection established successfully.
+2026-06-30 17:23:17,385 - database.connection - INFO - [TibcoDB] Database connection established successfully.
+2026-06-30 17:23:20,997 - database.connection - INFO - [WSDMessagesDB] Database connection established successfully.
+2026-06-30 17:23:21,000 - database.connection - INFO - [WSDMessagesDB] Executing: SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE=?
+2026-06-30 17:23:21,001 - database.connection - INFO - [WSDMessagesDB] Params: ['BASE TABLE']
+2026-06-30 17:23:22,411 - database.connection - INFO - [WSDMessagesDB] Executing: SELECT COLUMN_NAME, DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME=? ORDER BY ORDINAL_POSITION
+2026-06-30 17:23:22,412 - database.connection - INFO - [WSDMessagesDB] Params: ['wsd_messages']
+2026-06-30 17:23:23,799 - database.connection - INFO - [WSDMessagesDB] Executing: SELECT name FROM sys.objects WHERE type='P' ORDER BY name
+2026-06-30 17:26:06,235 - database.connection - INFO - [PlatformSupportDB] Database connection established successfully.
+2026-06-30 17:26:09,875 - database.connection - INFO - [TibcoDB] Database connection established successfully.
+2026-06-30 17:26:13,516 - database.connection - INFO - [WSDMessagesDB] Database connection established successfully.
+2026-06-30 17:26:13,517 - database.connection - INFO - [WSDMessagesDB] Executing: SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE=?
+2026-06-30 17:26:13,519 - database.connection - INFO - [WSDMessagesDB] Params: ['BASE TABLE']
+2026-06-30 17:26:14,932 - database.connection - INFO - [WSDMessagesDB] Executing: SELECT COLUMN_NAME, DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME=? ORDER BY ORDINAL_POSITION
+2026-06-30 17:26:14,934 - database.connection - INFO - [WSDMessagesDB] Params: ['wsd_messages']
+2026-06-30 17:26:16,386 - database.connection - INFO - [WSDMessagesDB] Executing: SELECT name FROM sys.objects WHERE type='P' ORDER BY name
+2026-06-30 17:28:52,850 - database.connection - INFO - [PlatformSupportDB] Database connection established successfully.
+2026-06-30 17:28:56,483 - database.connection - INFO - [TibcoDB] Database connection established successfully.
+2026-06-30 17:29:00,167 - database.connection - INFO - [WSDMessagesDB] Database connection established successfully.
+2026-06-30 17:29:00,168 - database.connection - INFO - [WSDMessagesDB] Executing: SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE=?
+2026-06-30 17:29:00,168 - database.connection - INFO - [WSDMessagesDB] Params: ['BASE TABLE']
+2026-06-30 17:29:01,679 - database.connection - INFO - [WSDMessagesDB] Executing: SELECT COLUMN_NAME, DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME=? ORDER BY ORDINAL_POSITION
+2026-06-30 17:29:01,681 - database.connection - INFO - [WSDMessagesDB] Params: ['wsd_messages']
+2026-06-30 17:29:03,379 - database.connection - INFO - [WSDMessagesDB] Executing: SELECT name FROM sys.objects WHERE type='P' ORDER BY name

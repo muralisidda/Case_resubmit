@@ -1,12 +1,30 @@
-# Python cache
-__pycache__/
-*.py[cod]
-
-# Local environment
+# Environment / secrets
 .env
 
-# Local JMS credential file (keep secrets out of source control)
-config/jms_credentials.json
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
 
-# Runtime logs
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Java compiled output
+jms_sender/*.class
+
+# IDE
+.vscode/
+.idea/
+*.suo
+*.user
+
+# Logs
 *.log

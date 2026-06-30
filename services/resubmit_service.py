@@ -10,16 +10,9 @@ mock/sample data so the UI can still be developed and demonstrated.
 """
 
 import logging
-import os
 from datetime import datetime
 
 logger = logging.getLogger(__name__)
-
-
-def _as_bool(value, default=False):
-    if value is None:
-        return default
-    return str(value).strip().lower() in {'1', 'true', 'yes', 'y', 'on'}
 
 # ---------------------------------------------------------------------------
 # Mock / sample data (used when DB is unavailable)
@@ -92,7 +85,7 @@ class ResubmitService:
         Return (records, error_message).
         Falls back to mock data when the DB is unavailable or on error.
         """
-        from database.connection import platform_db, tibco_db
+        from database.connection import platform_db
 
         db_error = None
 
@@ -122,29 +115,6 @@ class ResubmitService:
             )
             records = ResubmitService._filter_mock(case_number, guid)
 
-        # Enrich with TIBCO case data if available
-        if tibco_db.connection_available and records:
-            case_nums = list({r.get('CaseNumber') for r in records if r.get('CaseNumber')})
-            if case_nums:
-                placeholders = ','.join(['?'] * len(case_nums))
-                tibco_query = f"""
-                    SELECT casenum, field_name, field_value
-                    FROM [tibcodomain].[swpro].[case_data]
-                    WHERE casenum IN ({placeholders})
-                """
-                try:
-                    tibco_rows = tibco_db.execute_raw_query(tibco_query, case_nums)
-                    # Build a lookup: {casenum: {field_name: field_value}}
-                    tibco_map: dict = {}
-                    for row in tibco_rows:
-                        cn = row['casenum']
-                        tibco_map.setdefault(cn, {})[row['field_name']] = row['field_value']
-                    # Attach TIBCO fields to each record
-                    for rec in records:
-                        rec['TibcoCaseData'] = tibco_map.get(rec.get('CaseNumber'), {})
-                except Exception as exc:
-                    logger.warning(f"TIBCO DB enrichment failed: {exc}")
-
         return records, db_error
 
     @staticmethod
@@ -172,99 +142,294 @@ class ResubmitService:
             return '<Message><Info>Sample message body - DB not connected</Info></Message>', None
 
     @staticmethod
-    def resubmit_case(case_number: str, record_id: str, reason: str, submitted_by: str):
+    def _ensure_ems_producer_compiled(java_exe: str, tibjms_jar: str, sender_dir: str):
         """
-        Attempt to resubmit the case.
-        Returns (success: bool, message: str).
+        Compile EmsProducer.java if EmsProducer.class does not already exist.
+        Uses javac from the same JRE as java_exe.  Raises RuntimeError on failure.
+        javax.jms-api.jar must sit alongside tibjms.jar.
         """
-        from database.connection import platform_db
+        import subprocess, os
+        class_file = os.path.join(sender_dir, 'EmsProducer.class')
+        java_file  = os.path.join(sender_dir, 'EmsProducer.java')
+        if os.path.exists(class_file):
+            return
+        jms_api_jar = os.path.join(os.path.dirname(tibjms_jar), 'javax.jms-api.jar')
+        cp = tibjms_jar + ';' + jms_api_jar
+        javac = java_exe.replace('java.exe', 'javac.exe')
+        cmd = [javac, '-cp', cp, java_file]
+        result = subprocess.run(cmd, capture_output=True, text=True)
+        if result.returncode != 0:
+            raise RuntimeError(
+                f"EmsProducer compile failed:\n{result.stderr}"
+            )
+        logger.info("EmsProducer.java compiled successfully.")
+
+    @staticmethod
+    def resubmit_case(
+        case_number: str,
+        record_id: str,
+        reason: str,
+        submitted_by: str,
+        investor_id: str = '',
+        proc_name: str = '',
+    ):
+        """
+        Build a workflowMessageRequest XML envelope and send it to TIBCO EMS
+        as a synchronous request, then return the reply body.
+        Returns (success: bool, message: str, queue: str, sent_xml: str, response_xml: str).
+        """
+        import os
+        import subprocess
+        import xml.etree.ElementTree as ET
 
         logger.info(
-            f"Resubmit requested: case={case_number}, record={record_id}, "
-            f"by={submitted_by}, reason={reason}"
+            f"Resubmit requested: case={case_number}, guid={record_id}, "
+            f"investor={investor_id}, by={submitted_by}, reason={reason}"
         )
 
-        if platform_db.connection_available:
-            try:
-                # Log the resubmission attempt
-                platform_db.execute_non_query(
-                    """
-                    INSERT INTO dbo.ResubmitAuditLog
-                        (CaseNumber, RecordId, Reason, SubmittedBy, SubmittedAt)
-                    VALUES (?, ?, ?, ?, GETDATE())
-                    """,
-                    [case_number, record_id, reason, submitted_by],
-                )
-                # Trigger resubmit (adjust stored-proc name to your environment)
-                platform_db.execute_non_query(
-                    "EXEC dbo.usp_ResubmitCase @CaseNumber=?, @RecordId=?, @Reason=?",
-                    [case_number, record_id, reason],
-                )
+        # ── Config from .env ───────────────────────────────────────────
+        java_exe    = os.environ.get('JMS_JAVA_EXE',   r'C:\tibco\tibcojre\1.6.0\bin\java.exe')
+        tibjms_jar  = os.environ.get('JMS_TIBJMS_JAR', '').strip()
+        sender_dir  = os.environ.get('JMS_SENDER_DIR', r'C:\case_resubmit\jms_sender')
+        host        = os.environ.get('JMS_HOST',       'UK-man-ems-01')
+        port        = os.environ.get('JMS_PORT',       '7222')
+        username    = os.environ.get('JMS_USERNAME',   '')
+        password    = os.environ.get('JMS_PASSWORD',   '')
+        queue       = os.environ.get('JMS_QUEUE',      'AJBG.FrameworkServices.CreateCase')
 
-                jms_enabled = _as_bool(os.environ.get('ENABLE_TIBCO_JMS_RESUBMIT'), False)
-                if jms_enabled:
-                    from services.workflow_admin_service import WorkflowAdminService
+        if not tibjms_jar or not os.path.isfile(tibjms_jar):
+            return False, (
+                "JMS not configured – set JMS_TIBJMS_JAR in .env to the full path "
+                "of tibjms.jar (ask your TIBCO administrator)."
+            ), queue, '', ''
 
-                    workflow_service = WorkflowAdminService.from_config()
-                    workflow_service.post_update_case(
-                        {
-                            'workflowAttributes': {
-                                'caseNumber': case_number,
-                                'updatedBy': submitted_by,
-                                'updateReason': reason,
-                            },
-                            'workflowMessageRequestFields': {
-                                'Field': [
-                                    {'Name': 'RecordId', 'Value': record_id or ''},
-                                    {'Name': 'ResubmitReason', 'Value': reason},
-                                    {'Name': 'SubmittedBy', 'Value': submitted_by},
-                                ]
-                            },
-                        }
-                    )
+        # ── Build workflowMessageRequest XML (namespace-correct per XSD) ──
+        WMR_NS = 'http://www.ajbell.co.uk/schemas/xsd/businessModel/workflow/workflowMessage.xsd'
+        WA_NS  = 'http://www.ajbell.co.uk/schemas/xsd/businessModel/workflow/workflowAttributes.xsd'
+        ET.register_namespace('wmr', WMR_NS)
+        ET.register_namespace('wa',  WA_NS)
 
-                return True, f"Case {case_number} has been successfully resubmitted."
-            except Exception as exc:
-                logger.error(f"Resubmit error: {exc}")
-                return False, f"Resubmit failed: {exc}"
-        else:
-            # Simulate success when no DB is connected (demo mode)
-            logger.info("Demo mode: resubmit simulated (no DB connection).")
-            jms_enabled = _as_bool(os.environ.get('ENABLE_TIBCO_JMS_RESUBMIT'), False)
-            if jms_enabled:
-                try:
-                    from services.workflow_admin_service import WorkflowAdminService
+        root  = ET.Element(f'{{{WMR_NS}}}workflowMessageRequest')
+        attrs = ET.SubElement(root, f'{{{WA_NS}}}workflowAttributes')
+        ET.SubElement(attrs, f'{{{WA_NS}}}procedureName').text = 'MASProce'
+        ET.SubElement(attrs, f'{{{WA_NS}}}stepName').text      = '001MAS01'
+        ET.SubElement(attrs, f'{{{WA_NS}}}startedBy').text     = 'tibcoadmin'
 
-                    workflow_service = WorkflowAdminService.from_config()
-                    workflow_service.post_update_case(
-                        {
-                            'workflowAttributes': {
-                                'caseNumber': case_number,
-                                'updatedBy': submitted_by,
-                                'updateReason': reason,
-                            },
-                            'workflowMessageRequestFields': {
-                                'Field': [
-                                    {'Name': 'RecordId', 'Value': record_id or ''},
-                                    {'Name': 'ResubmitReason', 'Value': reason},
-                                    {'Name': 'SubmittedBy', 'Value': submitted_by},
-                                ]
-                            },
-                        }
-                    )
-                    return (
-                        True,
-                        f"[Demo] Case {case_number} resubmit simulated in DB mode and sent to TIBCO JMS.",
-                    )
-                except Exception as exc:
-                    logger.error(f"Demo mode JMS resubmit error: {exc}")
-                    return False, f"Resubmit failed while sending to TIBCO JMS: {exc}"
+        fields = ET.SubElement(root, f'{{{WMR_NS}}}Fields')
+        field  = ET.SubElement(fields, f'{{{WMR_NS}}}Field')
+        ET.SubElement(field, f'{{{WMR_NS}}}Name').text  = 'OLDCASENUM'
+        ET.SubElement(field, f'{{{WMR_NS}}}Value').text = case_number
 
-            return (
-                True,
-                f"[Demo] Case {case_number} resubmit logged. "
-                f"(DB not connected - this is a simulated response.)",
+        envelope = '<?xml version="1.0" encoding="UTF-8"?>' + ET.tostring(root, encoding='unicode')
+
+        # ── Compile Java helper if needed ──────────────────────────────
+        try:
+            ResubmitService._ensure_ems_producer_compiled(java_exe, tibjms_jar, sender_dir)
+        except RuntimeError as exc:
+            logger.error(str(exc))
+            return False, f"EmsProducer compile error: {exc}", queue, envelope, ''
+
+        # ── Launch Java subprocess ─────────────────────────────────────
+        jms_api_jar = os.path.join(os.path.dirname(tibjms_jar), 'javax.jms-api.jar')
+        classpath = tibjms_jar + ';' + jms_api_jar + ';' + sender_dir
+        cmd = [
+            java_exe,
+            '-cp', classpath,
+            'EmsProducer',
+            host, port, username, password, queue, envelope,
+        ]
+
+        try:
+            result = subprocess.run(
+                cmd,
+                capture_output=True,
+                text=True,
+                timeout=35,
             )
+            if result.returncode == 0:
+                response_xml = result.stdout.strip()
+                logger.info(f"JMS reply received for case {case_number}: {response_xml[:120]}")
+                return True, f"Case {case_number} has been successfully resubmitted.", queue, envelope, response_xml
+            elif result.returncode == 2:
+                logger.error("EmsProducer timed out waiting for reply.")
+                return False, "Resubmit failed – no reply from EMS within 30 s.", queue, envelope, ''
+            else:
+                err = result.stderr.strip() or result.stdout.strip()
+                logger.error(f"EmsProducer exited {result.returncode}: {err}")
+                return False, f"Resubmit failed – EMS error: {err}", queue, '', ''
+        except subprocess.TimeoutExpired:
+            logger.error("EmsProducer subprocess timed out after 35 s.")
+            return False, "Resubmit failed – EMS connection timed out (35 s).", queue, '', ''
+        except Exception as exc:
+            logger.error(f"EmsProducer subprocess error: {exc}")
+            return False, f"Resubmit failed – subprocess error: {exc}", queue, '', ''
+
+    @staticmethod
+    def amend_message_status(message_identifier: str):
+        """
+        Set MessageStatus = 1 in WSD_Messages for the given MessageIdentifier.
+        Returns (success: bool, error_message | None).
+        """
+        import re
+        from database.connection import wsd_db
+
+        if not message_identifier or not re.match(r'^[A-Za-z0-9\-]+$', message_identifier):
+            return False, "Invalid MessageIdentifier format."
+
+        if not wsd_db.connection_available:
+            return False, "WebSupportDatabase is not connected."
+
+        try:
+            wsd_db.execute_non_query(
+                "UPDATE [dbo].[WSD_Messages] SET MessageStatus = 1 WHERE MessageIdentifier = ?",
+                [message_identifier],
+            )
+            logger.info(f"MessageStatus set to 1 for MessageIdentifier={message_identifier}")
+            return True, None
+        except Exception as exc:
+            logger.error(f"amend_message_status error: {exc}")
+            return False, str(exc)
+
+    # ------------------------------------------------------------------
+    # TIBCO case message lookup (primary search by case number)
+    # ------------------------------------------------------------------
+
+    _TIBCO_STEP1_QUERY = """
+        SELECT TOP 1
+            cda.field_value  AS InvestorId,
+            cia.started      AS CaseStarted,
+            cia.proc_id      AS ProcId,
+            pi.proc_name     AS ProcName
+        FROM swpro.case_data cda WITH (NOLOCK)
+        INNER JOIN swpro.case_information cia WITH (NOLOCK)
+            ON cia.casenum = cda.casenum
+        INNER JOIN swpro.proc_index pi WITH (NOLOCK)
+            ON pi.proc_id = cia.proc_id
+        WHERE cda.casenum = ?
+          AND cda.field_name = 'IVINVESTORID'
+    """
+
+    @staticmethod
+    def fetch_tibco_case_message(case_number: str, guid: str):
+        """
+        Two-step lookup using both case_number and guid (MessageIdentifier):
+          1. Direct query to tibcodomain (AG-UK-TIBCO-1\\TIBCO) to fetch
+             InvestorId / CaseStarted / ProcId / ProcName using casenum.
+          2. Direct query to WebSupportDatabase (AJB10VSS01\\AJB10VSS01) filtered
+             by both ClientIdentifier (InvestorId) AND MessageIdentifier (GUID),
+             ordered by closest CreateDateTime to CaseStarted.
+
+        Returns (result_dict | None, error_message | None).
+        Falls back to mock data when DB connections are unavailable.
+        """
+        import re
+        from database.connection import tibcodomain_db, wsd_db
+
+        if not case_number or not guid:
+            return None, "Both case number and GUID are required."
+
+        if not re.match(r'^[A-Za-z0-9\-_]+$', case_number):
+            return None, "Invalid case number format."
+
+        # GUID may contain hyphens — validate as UUID-like string
+        if not re.match(r'^[A-Za-z0-9\-]+$', guid):
+            return None, "Invalid GUID format."
+
+        if not tibcodomain_db.connection_available:
+            logger.warning("tibcodomain DB unavailable – returning mock data for case lookup.")
+            return {
+                'CaseNum': case_number,
+                'InvestorId': 'MOCK-INV-001',
+                'ProcId': 1001,
+                'ProcName': 'iProcess.CaseSubmit.MainFlow',
+                'CaseStarted': '2024-06-01 09:15:00.000',
+                'MessageIdentifier': guid,
+                'AdviserIdentifier': 'MOCK-ADV-001',
+                'ClientIdentifier': 'MOCK-INV-001',
+                'MessageType': 'CASE_SUBMIT',
+                'MessageBody': '<Message><CaseNumber>123456</CaseNumber><Status>FAILED</Status><Reason>Mock data – DB not connected</Reason></Message>',
+                'MessageStatus': 'FAILED',
+                'CreateDateTime': '2024-06-01 09:15:32.000',
+                'CompletedDateTime': None,
+                'DiffSeconds': 32,
+            }, "tibcodomain DB not connected – showing sample data."
+
+        # ── Step 1: get case details from tibcodomain ──────────────────
+        try:
+            rows = tibcodomain_db.execute_raw_query(
+                ResubmitService._TIBCO_STEP1_QUERY, [case_number]
+            )
+        except Exception as exc:
+            logger.error(f"tibcodomain step-1 query failed: {exc}")
+            return None, f"TIBCO case lookup failed: {exc}"
+
+        if not rows:
+            return None, f"No case found for case number: {case_number}"
+
+        row = rows[0]
+        investor_id  = str(row['InvestorId'])
+        case_started = row['CaseStarted']
+        proc_id      = int(row['ProcId'])
+        proc_name    = str(row['ProcName'])
+
+        if not re.match(r'^[A-Za-z0-9\-_]+$', investor_id):
+            return None, f"Unexpected InvestorId format returned from DB: {investor_id}"
+
+        # Format datetime for comparison
+        if hasattr(case_started, 'strftime'):
+            ms = case_started.microsecond // 1000
+            case_started_str = case_started.strftime('%Y-%m-%d %H:%M:%S.') + f"{ms:03d}"
+        else:
+            case_started_str = str(case_started)
+
+        # ── Step 2: query WebSupportDatabase by ClientIdentifier + GUID ──
+        if not wsd_db.connection_available:
+            logger.warning("WSD DB unavailable – returning partial result without message details.")
+            return {
+                'CaseNum': case_number,
+                'InvestorId': investor_id,
+                'ProcId': proc_id,
+                'ProcName': proc_name,
+                'CaseStarted': case_started_str,
+                'MessageIdentifier': guid,
+                'CreateDateTime': None,
+                'DiffSeconds': None,
+            }, "WebSupportDatabase not connected – message details unavailable."
+
+        step2_sql = """
+            SELECT TOP 1
+                ? AS CaseNum,
+                ? AS InvestorId,
+                ? AS ProcId,
+                ? AS ProcName,
+                ? AS CaseStarted,
+                MessageIdentifier,
+                AdviserIdentifier,
+                ClientIdentifier,
+                MessageType,
+                MessageBody,
+                MessageStatus,
+                CreateDateTime,
+                CompletedDateTime,
+                ABS(DATEDIFF(SECOND, CreateDateTime, ?)) AS DiffSeconds
+            FROM dbo.wsd_messages WITH (NOLOCK)
+            WHERE ClientIdentifier = ?
+              AND MessageIdentifier = ?
+            ORDER BY DiffSeconds
+        """
+
+        try:
+            result_rows = wsd_db.execute_raw_query(
+                step2_sql,
+                [case_number, investor_id, proc_id, proc_name,
+                 case_started_str, case_started_str, investor_id, guid],
+            )
+            if result_rows:
+                return result_rows[0], None
+            return None, f"No WSD message found for case {case_number} with GUID {guid}."
+        except Exception as exc:
+            logger.error(f"WSD messages step-2 query failed: {exc}")
+            return None, f"WSD message lookup failed: {exc}"
 
     # ------------------------------------------------------------------
     # Internal helpers
