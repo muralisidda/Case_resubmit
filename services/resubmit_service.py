@@ -10,9 +10,16 @@ mock/sample data so the UI can still be developed and demonstrated.
 """
 
 import logging
+import os
 from datetime import datetime
 
 logger = logging.getLogger(__name__)
+
+
+def _as_bool(value, default=False):
+    if value is None:
+        return default
+    return str(value).strip().lower() in {'1', 'true', 'yes', 'y', 'on'}
 
 # ---------------------------------------------------------------------------
 # Mock / sample data (used when DB is unavailable)
@@ -193,6 +200,29 @@ class ResubmitService:
                     "EXEC dbo.usp_ResubmitCase @CaseNumber=?, @RecordId=?, @Reason=?",
                     [case_number, record_id, reason],
                 )
+
+                jms_enabled = _as_bool(os.environ.get('ENABLE_TIBCO_JMS_RESUBMIT'), False)
+                if jms_enabled:
+                    from services.workflow_admin_service import WorkflowAdminService
+
+                    workflow_service = WorkflowAdminService.from_config()
+                    workflow_service.post_update_case(
+                        {
+                            'workflowAttributes': {
+                                'caseNumber': case_number,
+                                'updatedBy': submitted_by,
+                                'updateReason': reason,
+                            },
+                            'workflowMessageRequestFields': {
+                                'Field': [
+                                    {'Name': 'RecordId', 'Value': record_id or ''},
+                                    {'Name': 'ResubmitReason', 'Value': reason},
+                                    {'Name': 'SubmittedBy', 'Value': submitted_by},
+                                ]
+                            },
+                        }
+                    )
+
                 return True, f"Case {case_number} has been successfully resubmitted."
             except Exception as exc:
                 logger.error(f"Resubmit error: {exc}")
@@ -200,10 +230,40 @@ class ResubmitService:
         else:
             # Simulate success when no DB is connected (demo mode)
             logger.info("Demo mode: resubmit simulated (no DB connection).")
+            jms_enabled = _as_bool(os.environ.get('ENABLE_TIBCO_JMS_RESUBMIT'), False)
+            if jms_enabled:
+                try:
+                    from services.workflow_admin_service import WorkflowAdminService
+
+                    workflow_service = WorkflowAdminService.from_config()
+                    workflow_service.post_update_case(
+                        {
+                            'workflowAttributes': {
+                                'caseNumber': case_number,
+                                'updatedBy': submitted_by,
+                                'updateReason': reason,
+                            },
+                            'workflowMessageRequestFields': {
+                                'Field': [
+                                    {'Name': 'RecordId', 'Value': record_id or ''},
+                                    {'Name': 'ResubmitReason', 'Value': reason},
+                                    {'Name': 'SubmittedBy', 'Value': submitted_by},
+                                ]
+                            },
+                        }
+                    )
+                    return (
+                        True,
+                        f"[Demo] Case {case_number} resubmit simulated in DB mode and sent to TIBCO JMS.",
+                    )
+                except Exception as exc:
+                    logger.error(f"Demo mode JMS resubmit error: {exc}")
+                    return False, f"Resubmit failed while sending to TIBCO JMS: {exc}"
+
             return (
                 True,
                 f"[Demo] Case {case_number} resubmit logged. "
-                f"(DB not connected – this is a simulated response.)",
+                f"(DB not connected - this is a simulated response.)",
             )
 
     # ------------------------------------------------------------------

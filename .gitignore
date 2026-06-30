@@ -1,0 +1,12 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Local environment
+.env
+
+# Local JMS credential file (keep secrets out of source control)
+config/jms_credentials.json
+
+# Runtime logs
+*.log

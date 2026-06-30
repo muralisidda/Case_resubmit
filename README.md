@@ -35,6 +35,34 @@ Copy `.env.example` to `.env` (already done) and fill in real DB credentials:
 | `TIBCO_DB_SERVER` | TIBCO Case Data SQL Server hostname |
 | `TIBCO_DB_NAME` | TIBCO database name |
 
+### TIBCO JMS (Optional)
+
+This project now includes a Python workflow service equivalent to the C#
+`WorkflowAdminRepository` for sending Create/Update case messages to TIBCO.
+
+1. Install dependencies (includes `stomp.py`):
+
+```bash
+install_packages.bat
+```
+
+2. Create a local JMS credential file:
+
+```text
+config/jms_credentials.json
+```
+
+Use [config/jms_credentials.example.json](config/jms_credentials.example.json) as the template.
+
+3. Enable JMS integration in `.env`:
+
+```text
+ENABLE_TIBCO_JMS_RESUBMIT=True
+JMS_CONFIG_PATH=config/jms_credentials.json
+```
+
+If the JSON file is not present, `.env` JMS variables are used as fallback.
+
 When no database connection is available the application runs in **demo mode**
 and displays sample records so the UI can be verified.
 
